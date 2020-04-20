@@ -1,0 +1,44 @@
+.history {
+  max-width: 60vw;
+  border: 1px solid grey;
+  //padding: 2rem;
+  
+  ul {
+    margin: 0;
+  }
+  li { list-style: none}
+  .head {
+    display: flex;
+    justify-content: space-between;
+   
+    li {
+      width: 25%;
+      text-align: center;
+      padding: 1rem;
+      border:1px solid olivedrab;
+      background-color: antiquewhite;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-content: space-between;
+      border-top:1px solid olivedrab;
+      background-color: antiquewhite;
+      
+    }
+    span {
+      width: 25%;
+      text-align: center;
+      border-left:1px solid olivedrab;
+      padding: .5rem;
+      font-size: 1.4rem;
+    }
+  }
+}
