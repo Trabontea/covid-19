@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Card  from '../card/card';
 import History from "../history/history";
+import {DateLocale} from "../utils/utils"
+import './directory.style.scss'
 
 const Directory = () => {
   const [hasError, setErrors] = useState(false);
@@ -31,10 +33,11 @@ const Directory = () => {
         <div className="container">
           <div className="current-date">
             {general && general.datePublishedString ?
-              <Card
-                info={general.datePublishedString}
-                name={'Data Publicarii'}/> : ''
-            }
+              <div>
+                <span>Data Publicarii: </span>
+                <span>{DateLocale(general.datePublishedString)}</span>
+              </div>
+                : ''}
           </div>
           <div className="generals">
             {general && general.total ?
@@ -45,11 +48,13 @@ const Directory = () => {
             {currDay && Object.values(currDay)[3] ?
               <Card info={Object.values(currDay)[3].cured}
                     name={'Total Vindecati'}
+                    procent = {(Object.values(currDay)[3].cured /general.total *100).toFixed(2) }
               /> : ''
             }
             {currDay && Object.values(currDay)[3] ?
               <Card info={Object.values(currDay)[3].deaths}
                     name={'Decedati'}
+                    procent = {(Object.values(currDay)[3].deaths /general.total * 100).toFixed(2) }
               /> : ''
             }
             {currDay && Object.values(currDay)[3] ?

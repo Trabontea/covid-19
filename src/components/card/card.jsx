@@ -1,10 +1,15 @@
 import React from "react";
+import './card.style.scss'
 
-const Card = ({info, name}) => {
+const Card = ({info, name, procent}) => {
   return (
-    <div className="Card">
-      <span>{name} : </span>
-      <span>{info}</span>
+    <div className="card">
+      <p className='card-title'>{name} </p>
+      <p className='card-value'>
+        <span>{info} </span>
+        <span className="card-procent">{procent} {procent ? '%' : ''}</span>
+      </p>
+      
     </div>
   )
 };

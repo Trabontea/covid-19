@@ -1,0 +1,22 @@
+.card {
+  flex:1;
+  margin-left: 1.5rem;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #57606f;
+  p {
+   text-align: center;
+  }
+  &-title, &-value{
+    font-size: 2rem;
+    color:#ffffff
+  }
+  &-value {
+    color: #f8c291;
+  }
+  &-procent {
+    color:#82ccdd;
+    font-size: 1.2rem;
+    margin-left: 2rem
+  }
+}

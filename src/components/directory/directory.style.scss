@@ -1,0 +1,19 @@
+@import '../../scss/mixins';
+.container  {
+  margin : 0 auto;
+  max-width: 146rem;
+  .current-date, .generals {
+    @include width-custom(120rem);
+  }
+  
+  .current-date {
+    padding-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+  }
+  .generals {
+    display: flex;
+    justify-content: space-between;
+  }
+}
