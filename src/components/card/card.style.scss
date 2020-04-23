@@ -3,7 +3,10 @@
   margin-left: 1.5rem;
   border-radius: 5px;
   padding: 1rem;
-  background-color: #57606f;
+  background-color:#2d3436;
+  &:first-child {
+    margin-left: 0;
+  }
   p {
    text-align: center;
   }
@@ -12,10 +15,10 @@
     color:#ffffff
   }
   &-value {
-    color: #f8c291;
+    color:#00b894;
   }
   &-procent {
-    color:#82ccdd;
+    color:#81ecec;
     font-size: 1.2rem;
     margin-left: 2rem
   }

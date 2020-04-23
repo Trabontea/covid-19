@@ -9,6 +9,7 @@ const History = ({history}) => {
   return (
     <div className="history">
       <div className="table">
+        <h2>Numar de cazuri pe zile</h2>
         <ul className="head">
           {
             head.map((el,i)=>(

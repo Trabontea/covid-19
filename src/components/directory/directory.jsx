@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import Card  from '../card/card';
 import History from "../history/history";
 import {DateLocale} from "../utils/utils"
+import AgesSituation from "../ages/agesSituation"
 import './directory.style.scss'
+import Percentage from "../percentage/percentage";
 
 const Directory = () => {
   const [hasError, setErrors] = useState(false);
@@ -25,29 +27,34 @@ const Directory = () => {
   console.log('dataArray', dataArray);
   const general = dataArray[0];
   const currDay = dataArray[1];
-  console.log('currDAy::', currDay);
+  const percentagePersons = dataArray[2];
+  
+
+ 
+  
   
   return (
     <div>
       {hasError ? hasError :
         <div className="container">
-          <div className="current-date">
             {general && general.datePublishedString ?
-              <div>
-                <span>Data Publicarii: </span>
-                <span>{DateLocale(general.datePublishedString)}</span>
-              </div>
-                : ''}
-          </div>
+              <div className="website-title">
+                <h1>Situatie COVID-19 Romania</h1>
+                <p>
+                  <span>Data Publicarii: </span>
+                  <span>{DateLocale(general.datePublishedString)}</span>
+                </p>
+              </div> : ''
+            }
           <div className="generals">
             {general && general.total ?
               <Card info={general.total}
-                    name={'Total Imbolnaviri'}
+                    name={'Cazuri Confirmate'}
               /> : ''
             }
             {currDay && Object.values(currDay)[3] ?
               <Card info={Object.values(currDay)[3].cured}
-                    name={'Total Vindecati'}
+                    name={'Vindecati'}
                     procent = {(Object.values(currDay)[3].cured /general.total *100).toFixed(2) }
               /> : ''
             }
@@ -63,12 +70,31 @@ const Directory = () => {
               /> : ''
             }
           </div>
+          
           <div className="history-section">
             {currDay && Object.values(currDay)[4] ?
               <History history={Object.values(currDay)[4]}/>
               : ''
             }
           </div>
+          
+          {general && general.histogram ?
+            <AgesSituation propertiesAges={Object.keys(general.histogram)}
+            valuesAges={Object.values(general.histogram)}/>
+            : ''
+          }
+  
+        <div className="percentage-persons">
+          {percentagePersons && percentagePersons.percentageOfMen
+          && percentagePersons.percentageOfWomen && percentagePersons.percentageOfChildren ?
+          <Percentage
+            men={percentagePersons.percentageOfMen}
+            women={percentagePersons.percentageOfWomen}
+            children={percentagePersons.percentageOfChildren}
+          /> : ''}
+        </div>
+          
+          
         </div>
       }
     </div>

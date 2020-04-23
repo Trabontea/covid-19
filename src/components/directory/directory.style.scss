@@ -3,15 +3,27 @@
   margin : 0 auto;
   max-width: 146rem;
   .current-date, .generals {
-    @include width-custom(120rem);
+    @include width-custom(146rem);
   }
   
-  .current-date {
+  .website-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
     padding-top: 2rem;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    padding-left: 2rem;
+    p {
+      color: #2d3436;
+      font-size: 2rem;
+      font-weight: 500;
+    }
   }
+  
+  h1 {
+    color: #0984e3;
+    font-size: 3rem;
+  }
+  
   .generals {
     display: flex;
     justify-content: space-between;

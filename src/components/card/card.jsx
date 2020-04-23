@@ -7,7 +7,7 @@ const Card = ({info, name, procent}) => {
       <p className='card-title'>{name} </p>
       <p className='card-value'>
         <span>{info} </span>
-        <span className="card-procent">{procent} {procent ? '%' : ''}</span>
+        <span className="card-procent">{procent}{procent ? '% din total' : ''}</span>
       </p>
       
     </div>
