@@ -1,18 +1,32 @@
 import React, { useState, useEffect } from "react";
-import Card  from '../card/card';
-import History from "../history/history";
-import {DateLocale} from "../utils/utils"
-import AgesSituation from "../ages/agesSituation"
+import Card  from '../commons/card/card';
+import DailyHistory from "../daily-history/daily-history";
+import {DateLocale} from "../utils/utils";
+import AgesSituation from "../age-situation/age-situation"
 import './directory.style.scss'
 import Percentage from "../percentage/percentage";
+import Counties from "../counties/counties";
+import InfoGeneral from "../info-general/info-general";
 
 const Directory = () => {
   const [hasError, setErrors] = useState(false);
   const [data, setData] = useState({});
+  const [sortColumn, setSortColumn] = useState({path: 'datePublished', order: 'desc'});
   
   useEffect(() => {
     fetchData();
   }, []);
+  
+  const handleSort = path => {
+    setSortColumn({path: path, order: 'asc'});
+    if(sortColumn.path === path && sortColumn.order ==="asc") {
+      setSortColumn({path: path, order: 'desc'});
+    }
+    else {
+      sortColumn.path = path;
+      sortColumn.order = 'asc';
+    }
+  };
   
   
   async function fetchData() {
@@ -28,76 +42,65 @@ const Directory = () => {
   const general = dataArray[0];
   const currDay = dataArray[1];
   const percentagePersons = dataArray[2];
-  
-
- 
-  
+  const counties = dataArray[5];
+  console.log('counties', counties);
   
   return (
-    <div>
+    <React.Fragment>
       {hasError ? hasError :
         <div className="container">
-            {general && general.datePublishedString ?
-              <div className="website-title">
-                <h1>Situatie COVID-19 Romania</h1>
-                <p>
-                  <span>Data Publicarii: </span>
-                  <span>{DateLocale(general.datePublishedString)}</span>
-                </p>
-              </div> : ''
-            }
-          <div className="generals">
-            {general && general.total ?
-              <Card info={general.total}
-                    name={'Cazuri Confirmate'}
-              /> : ''
-            }
-            {currDay && Object.values(currDay)[3] ?
-              <Card info={Object.values(currDay)[3].cured}
-                    name={'Vindecati'}
-                    procent = {(Object.values(currDay)[3].cured /general.total *100).toFixed(2) }
-              /> : ''
-            }
-            {currDay && Object.values(currDay)[3] ?
-              <Card info={Object.values(currDay)[3].deaths}
-                    name={'Decedati'}
-                    procent = {(Object.values(currDay)[3].deaths /general.total * 100).toFixed(2) }
-              /> : ''
-            }
-            {currDay && Object.values(currDay)[3] ?
-              <Card info={Object.values(currDay)[3].averageAge}
-                    name={'Media de varsta'}
-              /> : ''
-            }
-          </div>
-          
-          <div className="history-section">
-            {currDay && Object.values(currDay)[4] ?
-              <History history={Object.values(currDay)[4]}/>
-              : ''
-            }
-          </div>
-          
-          {general && general.histogram ?
-            <AgesSituation propertiesAges={Object.keys(general.histogram)}
-            valuesAges={Object.values(general.histogram)}/>
-            : ''
+          {general  ?
+            <div className="website-title">
+              <h1>Situatie COVID-19 Romania</h1>
+              <p>
+                <span>Data Publicarii: </span>
+                <span>{DateLocale(general.datePublishedString)}</span>
+              </p>
+            </div> : ''
           }
-  
-        <div className="percentage-persons">
-          {percentagePersons && percentagePersons.percentageOfMen
-          && percentagePersons.percentageOfWomen && percentagePersons.percentageOfChildren ?
-          <Percentage
-            men={percentagePersons.percentageOfMen}
-            women={percentagePersons.percentageOfWomen}
-            children={percentagePersons.percentageOfChildren}
-          /> : ''}
-        </div>
-          
-          
+          {general && currDay ?
+            <InfoGeneral general={general} currDay={currDay} />
+             : ''
+          }
+          <section className="graphic">
+            <div className="age-situation">
+              {general ?
+                <AgesSituation
+                  propertiesAges={Object.keys(general.histogram)}
+                  valuesAges={Object.values(general.histogram)}
+                />  : ''
+              }
+            </div>
+            <div className="percentage-persons">
+              {percentagePersons ?
+                <Percentage  percentagePersons={percentagePersons}/> : ''
+              }
+              {currDay ?
+                <Card info={Object.values(currDay)[3].averageAge}
+                  name={'Media de varsta'}
+                  option={'white'}
+                /> : '' }
+            </div>
+          </section>
+          <section className="history-section">
+            {currDay  ?
+              <DailyHistory
+                history={Object.values(currDay)[4]}
+                sortColumn={sortColumn}
+                onSort={handleSort}
+              />  : ''
+            }
+            {counties  ?
+              <Counties
+                dataCounties={counties.data}
+                sortColumn={sortColumn}
+                onSort={handleSort}
+              />  : ''
+            }
+          </section>
         </div>
       }
-    </div>
+    </React.Fragment>
   );
 };
 export default Directory;

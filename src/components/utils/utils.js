@@ -4,3 +4,16 @@ export const DateLocale = (value) => {
   arr.splice(1,0, cutOut);
   return `${arr[2]}-${arr[0]}-${arr[1]}`;
 };
+
+export const twoDecimals =(value) => {
+  return value.toFixed(2)
+};
+
+
+export const translate = (value) => {
+  if(value === 'datePublished') {
+    value = 'Data';
+  } else {
+    value = value
+  }
+};

@@ -1,0 +1,7 @@
+@import '../../scss/mixins';
+.ages-situation {
+  @include borderBox;
+  &_chart {
+    width: 86rem;
+  }
+}

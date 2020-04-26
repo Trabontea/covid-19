@@ -1,4 +1,6 @@
+@import '../../scss/mixins';
 .percentage {
+  @include borderBox;
   h3 {
     color: #57606f;
     font-size: 2rem;

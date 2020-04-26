@@ -1,0 +1,32 @@
+.head {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  li {
+    width: 25%;
+    text-align: center;
+    padding: 1rem;
+    background-color:#fff;
+    color: #2f3640;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+  }
+  .cell {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    .sort {
+      cursor: pointer;
+      margin-left: .5rem;
+      width: 1.2rem;
+      height: 1.2rem;
+      svg {
+        fill:#0984e3;
+      }
+    }
+  }
+}

@@ -1,8 +1,9 @@
-@import './scss/_normalize.scss';
+@import './scss/normalize';
+@import './scss/mixins';
 //american pallete
 //https://flatuicolors.com/palette/us
 
-li { list-style: none}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,500&display=swap');
 .App {
@@ -10,4 +11,49 @@ li { list-style: none}
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
 }
+li { list-style: none}
 
+h2 {
+  color: #57606f;
+  font-size: 2rem;
+}
+
+.daily-history {
+  flex:1;
+  margin-right: 1rem;
+}
+
+.counties-situation {
+  flex:1
+}
+
+.table {
+  padding: 1rem 2rem;
+  border: 1px solid #636e72;
+  border-radius: 5px;
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-content: space-between;
+      border-top: 1px solid #7f8fa6;
+      background-color: #ffffff;
+      
+      &:first-child {
+        border-top: 2px solid #7f8fa6;
+      }
+    }
+    span {
+      width: 25%;
+      text-align: center;
+      padding: 1rem .5rem;
+      font-size: 1.4rem;
+      color: #2f3640;
+    }
+   
+  }
+}

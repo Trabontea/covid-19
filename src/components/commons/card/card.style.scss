@@ -1,0 +1,48 @@
+@import '../../../scss/mixins';
+
+.card {
+  flex:1;
+  margin-left: 1.5rem;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color:#2d3436;
+}
+
+.card-grey {
+  &:first-child {
+    margin-left: 0;
+  }
+  
+  p {
+    text-align: center;
+  }
+  .card-title, .card-value {
+    font-size: 2rem;
+    color: #ffffff
+  }
+  .card-value {
+    color: #00b894;
+  }
+  .card-procent {
+    color: #81ecec;
+    font-size: 1.2rem;
+    margin-left: 2rem
+  }
+}
+
+.card-white {
+  @include borderBox;
+  margin-top: 1rem;
+  margin-left: 0;
+  background-color: transparent;
+  
+  h3 {
+    font-size: 2rem;
+    color: #636e72;
+  }
+  .card-value {
+    font-size: 5rem;
+    color:#0984e3;
+    text-align: center;
+  }
+}

@@ -1,9 +1,9 @@
 @import '../../scss/mixins';
 .container  {
   margin : 0 auto;
-  max-width: 146rem;
+  max-width: 138rem;
   .current-date, .generals {
-    @include width-custom(146rem);
+    @include width-custom(138rem);
   }
   
   .website-title {
@@ -24,8 +24,23 @@
     font-size: 3rem;
   }
   
-  .generals {
+  
+  .graphic {
+    margin-top:5rem;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .percentage-persons {
+    display: flex;
+    flex-direction: column;
+  }
+  .history-section {
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    
   }
 }
