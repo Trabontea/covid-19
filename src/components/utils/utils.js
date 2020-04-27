@@ -8,12 +8,3 @@ export const DateLocale = (value) => {
 export const twoDecimals =(value) => {
   return value.toFixed(2)
 };
-
-
-export const translate = (value) => {
-  if(value === 'datePublished') {
-    value = 'Data';
-  } else {
-    value = value
-  }
-};

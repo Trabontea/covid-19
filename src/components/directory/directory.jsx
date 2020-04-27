@@ -8,10 +8,19 @@ import Percentage from "../percentage/percentage";
 import Counties from "../counties/counties";
 import InfoGeneral from "../info-general/info-general";
 
+
 const Directory = () => {
   const [hasError, setErrors] = useState(false);
   const [data, setData] = useState({});
   const [sortColumn, setSortColumn] = useState({path: 'datePublished', order: 'desc'});
+  
+  async function fetchData() {
+    const res = await fetch("https://api1.datelazi.ro/api/v2/data/ui-data");
+    res
+      .json()
+      .then(res => setData(res))
+      .catch(err => setErrors(err));
+  }
   
   useEffect(() => {
     fetchData();
@@ -27,15 +36,6 @@ const Directory = () => {
       sortColumn.order = 'asc';
     }
   };
-  
-  
-  async function fetchData() {
-    const res = await fetch("https://api1.datelazi.ro/api/v2/data/ui-data");
-    res
-      .json()
-      .then(res => setData(res))
-      .catch(err => setErrors(err));
-  }
   
   const dataArray = Object.values(data);
   console.log('dataArray', dataArray);
@@ -97,7 +97,7 @@ const Directory = () => {
                 onSort={handleSort}
               />  : ''
             }
-          </section>
+          </section>git
         </div>
       }
     </React.Fragment>
