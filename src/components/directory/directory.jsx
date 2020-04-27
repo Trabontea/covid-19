@@ -7,6 +7,7 @@ import './directory.style.scss'
 import Percentage from "../percentage/percentage";
 import Counties from "../counties/counties";
 import InfoGeneral from "../info-general/info-general";
+import Loader from "../loader/loader";
 
 
 const Directory = () => {
@@ -56,7 +57,7 @@ const Directory = () => {
                 <span>Data Publicarii: </span>
                 <span>{DateLocale(general.datePublishedString)}</span>
               </p>
-            </div> : ''
+            </div> : <Loader/>
           }
           {general && currDay ?
             <InfoGeneral general={general} currDay={currDay} />
