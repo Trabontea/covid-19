@@ -97,7 +97,7 @@ const Directory = () => {
                 onSort={handleSort}
               />  : ''
             }
-          </section>git
+          </section>
         </div>
       }
     </React.Fragment>
