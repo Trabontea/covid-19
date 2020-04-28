@@ -7,7 +7,7 @@ const DailyHistory = ({history, sortColumn, onSort}) => {
   const columns = [
     {path:'datePublished', label: 'Data'},
     {path:'infected', label: 'Infectati'},
-    {path:'cured', label: 'Vindecati'},
+    {path:'cured', label: 'Vindecati' },
     {path:'deaths', label: 'Decedati'}
   ];
   

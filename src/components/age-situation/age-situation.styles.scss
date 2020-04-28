@@ -1,7 +1,18 @@
 @import '../../scss/mixins';
+@import '../../scss/mediaqueries';
 .ages-situation {
   @include borderBox;
+  @include respond-max(xs) {
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
   &_chart {
     width: 86rem;
+    @include respond-max(xs) {
+      width: 33rem;
+     
+    }
   }
 }

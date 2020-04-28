@@ -1,4 +1,9 @@
+@import '../../scss/mediaqueries';
+
 .info-general {
   display: flex;
   justify-content: space-between;
+  @include respond-max(xs) {
+    flex-direction: column;
+  }
 }

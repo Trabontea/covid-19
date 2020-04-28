@@ -1,4 +1,5 @@
 @import '../../../scss/mixins';
+@import '../../../scss/mediaqueries';
 
 .card {
   flex:1;
@@ -6,6 +7,12 @@
   border-radius: 5px;
   padding: 1rem;
   background-color:#2d3436;
+  @include respond-max(xs) {
+    margin-left: 0;
+    border-radius: 0;
+    padding: 0;
+    border-bottom: 1px dotted #fdcb6e;
+  }
 }
 
 .card-grey {
@@ -18,7 +25,10 @@
   }
   .card-title, .card-value {
     font-size: 2rem;
-    color: #ffffff
+    color: #ffffff;
+    @include respond-max(xs) {
+      font-size: 1.6rem
+    }
   }
   .card-value {
     color: #00b894;
@@ -32,6 +42,9 @@
 
 .card-white {
   @include borderBox;
+  @include respond-max(xs) {
+    border: none;
+  }
   margin-top: 1rem;
   margin-left: 0;
   background-color: transparent;

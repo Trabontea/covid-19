@@ -1,8 +1,39 @@
 @import '../../scss/mixins';
+@import '../../scss/mediaqueries';
 .percentage {
   @include borderBox;
+  @include respond-max(xs) {
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+  }
   h3 {
     color: #57606f;
     font-size: 2rem;
+  }
+  &_chart {
+    width: 40rem;
+    @include respond-max(xs) {
+      width: 20rem;
+    }
+  }
+  .mobile {
+    display: none;
+    border: 1px solid #e17055;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0 3rem;
+    border-radius: 1rem;
+    @include respond-max(xs) {
+      display: block;
+    }
+    p {
+      font-size: 1.3rem;
+      .description {
+        font-weight: 700;
+        color: #6c5ce7;
+      }
+      
+    }
   }
 }

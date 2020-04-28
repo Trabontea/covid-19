@@ -1,11 +1,11 @@
 @import './scss/normalize';
 @import './scss/mixins';
+@import './scss/mediaqueries';
 //american pallete
 //https://flatuicolors.com/palette/us
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,500&display=swap');
+
 .App {
   background:#dfe4ea;
   box-sizing: border-box;
@@ -16,11 +16,19 @@ li { list-style: none}
 h2 {
   color: #57606f;
   font-size: 2rem;
+  @include respond-max(xs) {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    text-align: center;
+  }
 }
 
 .daily-history {
   flex:1;
   margin-right: 1rem;
+  @include respond-max(xs) {
+    margin-right: 0;
+  }
 }
 
 .counties-situation {
@@ -31,11 +39,14 @@ h2 {
   padding: 1rem 2rem;
   border: 1px solid #636e72;
   border-radius: 5px;
+  @include respond-max(xs) {
+    border: none;
+    padding: 0;
+  }
   
   .list {
     display: flex;
     flex-direction: column;
-    
     .row {
       display: flex;
       justify-content: space-between;
@@ -53,6 +64,9 @@ h2 {
       padding: 1rem .5rem;
       font-size: 1.4rem;
       color: #2f3640;
+      @include respond-max(xs) {
+        font-size: 1.3rem;
+      }
     }
    
   }

@@ -1,3 +1,5 @@
+@import '../../../scss/mediaqueries';
+
 .head {
   display: flex;
   align-items: center;
@@ -13,12 +15,32 @@
     color: #2f3640;
     font-size: 1.5rem;
     font-weight: 700;
-    
+    @include respond-max(xs) {
+      font-size: 1.4rem;
+    }
   }
   .cell {
     display: flex;
     justify-content: center;
     margin: 0;
+    span {
+      &:first-child {
+        @include respond-max(xs) {
+          white-space: nowrap;
+          width: 50px;
+          overflow: hidden;
+          text-overflow: "----";
+    
+        }
+      }
+    }
+    .tooltipHead {
+      display: none;
+      @include respond-max(xs) {
+        display: block;
+      }
+    }
+    
     .sort {
       cursor: pointer;
       margin-left: .5rem;

@@ -33,11 +33,26 @@ const Percentage =({percentagePersons}) =>{
     <div className="percentage">
       <h2>Cazuri după gen</h2>
       <Chart
+        className="percentage_chart"
         options={data.options}
         series={data.series}
         type="donut"
-        width={400}
       />
+      <div className="mobile">
+        <p>
+          <span className="description">Barbati: </span>
+          <span>{men}%</span>
+        </p>
+        <p>
+          <span  className="description">Femei: </span>
+          <span>{women}%</span>
+        </p>
+        <p>
+          <span  className="description">Copii: </span>
+          <span>{children}%</span>
+        </p>
+      </div>
+      
     </div>
   
   )
