@@ -2,8 +2,9 @@ import React from "react";
 import TableHead from "../commons/tableHead/tableHead";
 import {twoDecimals} from "../utils/utils";
 import _ from "lodash";
+import UpdateDate from "../commons/updataDate/update-date";
 
-const Counties =({dataCounties,sortColumn, onSort}) => {
+const Counties =({dataCounties,sortColumn, onSort, updateDate}) => {
   
   const columns = [
     {path:'county', label: 'Judet'},
@@ -17,6 +18,7 @@ const Counties =({dataCounties,sortColumn, onSort}) => {
     <div className="counties-situation">
       <div className="table">
         <h2>Cazuri confirmate pe judet</h2>
+        <UpdateDate updateDate={updateDate} />
   
         <TableHead columns={columns} onSort={onSort} />
         

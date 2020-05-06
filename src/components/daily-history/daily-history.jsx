@@ -2,8 +2,9 @@ import React from "react";
 import {DateLocale} from "../utils/utils";
 import TableHead from "../commons/tableHead/tableHead";
 import _ from "lodash";
+import UpdateDate from "../commons/updataDate/update-date";
 
-const DailyHistory = ({history, sortColumn, onSort}) => {
+const DailyHistory = ({history, sortColumn, onSort, updateDate}) => {
   const columns = [
     {path:'datePublished', label: 'Data'},
     {path:'infected', label: 'Infectati'},
@@ -18,6 +19,7 @@ const DailyHistory = ({history, sortColumn, onSort}) => {
     <div className="daily-history">
       <div className="table">
         <h2>Numar de cazuri pe zile</h2>
+        <UpdateDate updateDate={updateDate}/>
         
         <TableHead columns={columns} onSort={onSort}/>
         <ul className="list">

@@ -8,7 +8,7 @@ const TableHead = ({columns, onSort}) => {
     <ul className="head">
       {columns && columns.map((column, i) => (
           <li key={column.path}>
-            <p className="cell">
+            <div className="cell">
               <span
                 data-tip
                 data-for={column.label}
@@ -26,7 +26,7 @@ const TableHead = ({columns, onSort}) => {
               <span className="sort" onClick={() => onSort(column.path)}>
               <Icon/>
             </span>
-            </p>
+            </div>
           </li>
         ))
       }

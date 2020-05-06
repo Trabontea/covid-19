@@ -1,4 +1,39 @@
 .footer {
-  height: 5rem;
+  height: 10rem;
   background-color: #2d3436;
+  &-content {
+    margin: 0 auto;
+    max-width: 138rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-message {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    
+    svg {
+      height: 4rem;
+      width: 5rem;
+      fill:#55efc4;
+      
+    }
+    
+  }
+  .currency {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    p {
+      font-size: 2rem;
+      margin-left: 5px;
+      color:#55efc4;
+    };
+  }
+  h2, .currency-value {
+    color:#55efc4;
+  }
+  
 }

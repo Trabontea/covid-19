@@ -8,12 +8,13 @@ import Percentage from "../percentage/percentage";
 import Counties from "../counties/counties";
 import InfoGeneral from "../info-general/info-general";
 import Loader from "../loader/loader";
+import GraphBySituation from "../graph-by-situation/graph-by-situation";
 
 
 const Directory = () => {
   const [hasError, setErrors] = useState(false);
   const [data, setData] = useState({});
-  const [sortColumn, setSortColumn] = useState({path: 'datePublished', order: 'desc'});
+  const [sortColumn, setSortColumn] = useState({path: 'datePublishedString', order: 'desc'});
   
   async function fetchData() {
     const res = await fetch("https://api1.datelazi.ro/api/v2/data/ui-data");
@@ -29,7 +30,7 @@ const Directory = () => {
   
   const handleSort = path => {
     setSortColumn({path: path, order: 'asc'});
-    if(sortColumn.path === path && sortColumn.order ==="asc") {
+    if(sortColumn.path === path && sortColumn.order === "asc") {
       setSortColumn({path: path, order: 'desc'});
     }
     else {
@@ -39,12 +40,10 @@ const Directory = () => {
   };
   
   const dataArray = Object.values(data);
-  console.log('dataArray', dataArray);
   const general = dataArray[0];
   const currDay = dataArray[1];
   const percentagePersons = dataArray[2];
   const counties = dataArray[5];
-  console.log('counties', counties);
   
   return (
     <React.Fragment>
@@ -69,24 +68,39 @@ const Directory = () => {
                 <AgesSituation
                   propertiesAges={Object.keys(general.histogram)}
                   valuesAges={Object.values(general.histogram)}
+                  updateDate={general.last_updated_on_string}
                 />  : ''
               }
             </div>
             <div className="percentage-persons">
               {percentagePersons ?
-                <Percentage  percentagePersons={percentagePersons}/> : ''
+                <Percentage
+                  percentagePersons={percentagePersons}
+                  updateDate={percentagePersons.last_updated_on_string}
+                /> : ''
               }
               {currDay ?
                 <Card info={Object.values(currDay)[3].averageAge}
                   name={'Media de varsta'}
                   option={'white'}
+                  updateDate ={currDay.last_updated_on_string}
                 /> : '' }
             </div>
+          </section>
+         
+          <section className="infected-graph">
+            {currDay  ?
+              <GraphBySituation
+                history={Object.values(currDay)[4]}
+                updateDate ={currDay.last_updated_on_string}
+              />  : ''
+            }
           </section>
           <section className="history-section">
             {currDay  ?
               <DailyHistory
                 history={Object.values(currDay)[4]}
+                updateDate ={currDay.last_updated_on_string}
                 sortColumn={sortColumn}
                 onSort={handleSort}
               />  : ''
@@ -94,6 +108,7 @@ const Directory = () => {
             {counties  ?
               <Counties
                 dataCounties={counties.data}
+                updateDate = {counties.lastUpdatedString}
                 sortColumn={sortColumn}
                 onSort={handleSort}
               />  : ''

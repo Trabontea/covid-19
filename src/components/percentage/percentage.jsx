@@ -1,8 +1,9 @@
 import React from 'react';
 import Chart from "react-apexcharts";
 import './percentage.styles.scss';
+import UpdateDate from "../commons/updataDate/update-date";
 
-const Percentage =({percentagePersons}) =>{
+const Percentage =({percentagePersons, updateDate}) =>{
   const men = percentagePersons.percentageOfMen;
   const women = percentagePersons.percentageOfWomen;
   const children = percentagePersons.percentageOfChildren;
@@ -32,6 +33,7 @@ const Percentage =({percentagePersons}) =>{
   return (
     <div className="percentage">
       <h2>Cazuri după gen</h2>
+      <UpdateDate updateDate={updateDate} />
       <Chart
         className="percentage_chart"
         options={data.options}

@@ -1,8 +1,9 @@
 import React from 'react';
 import Chart from "react-apexcharts";
 import './age-situation.styles.scss';
+import UpdateDate from "../commons/updataDate/update-date";
 
-const AgeSituation =({ages, propertiesAges, valuesAges}) => {
+const AgeSituation =({ages, propertiesAges, valuesAges, updateDate}) => {
   console.log('ages:', ages);
   console.log(propertiesAges, valuesAges);
   
@@ -26,6 +27,7 @@ const AgeSituation =({ages, propertiesAges, valuesAges}) => {
   return(
     <div className="ages-situation">
       <h2>Cazuri dupa varsta</h2>
+      <UpdateDate updateDate={updateDate} />
       <Chart className="ages-situation_chart"
         options={dataChart.options}
         series={dataChart.series}
