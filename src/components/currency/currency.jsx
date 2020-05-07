@@ -1,27 +1,33 @@
 import React, {useEffect, useState} from "react";
+import XMLParser from 'react-xml-parser';
 
 const Currency = () => {
   const [currency, setCurrency] = useState({});
   const [hasError, setErrors] = useState(false);
   
   async function fetchData() {
-    const res = await fetch('http://currency.joover.com/rate/eur');
+    const res = await fetch('');
     res
-      .json()
+      .text()
       .then(res =>setCurrency(res))
       .catch(err => setErrors(err));
-   
   }
   useEffect(() => {
     fetchData();
   }, []);
   
-  return(
-    <p>
-      {currency && currency.rate} RON
-    </p>
-  )
+
   
+  return(
+    <React.Fragment>
+      {hasError ? '' :
+        <div className="currency">
+          <span>Curs Valutar: 1 EUR = </span>
+          <span>{currency && currency.rate} RON</span>
+      </div>
+      }
+    </React.Fragment>
+  )
 };
 
 

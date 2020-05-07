@@ -15,7 +15,8 @@
     "react-map-chart": "^2.1.0",
     "react-scripts": "3.4.1",
     "react-svg-map": "^2.1.0",
-    "react-tooltip": "^4.2.5"
+    "react-tooltip": "^4.2.5",
+    "react-xml-parser": "^1.1.6"
   },
   "scripts": {
     "start": "react-scripts start",
