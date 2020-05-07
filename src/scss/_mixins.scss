@@ -1,3 +1,5 @@
+@import './mediaqueries';
+
 @mixin width-custom($width) {
   max-width: $width;
   margin-left: auto;
@@ -8,4 +10,8 @@
   padding: 2rem;
   border: 1px solid #636e72;
   border-radius: 5px;
+  @include respond-max(xs) {
+    border-radius: 0;
+    border: none;
+  }
 }

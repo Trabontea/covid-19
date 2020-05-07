@@ -27,11 +27,15 @@ h2 {
   margin-right: 1rem;
   @include respond-max(xs) {
     margin-right: 0;
+    margin-bottom: 2rem;
   }
 }
 
 .daily-history, .counties-situation {
   @include borderBox;
+  @include respond-max(xs) {
+    width: 100%;
+  }
 }
 
 .counties-situation {
@@ -39,9 +43,7 @@ h2 {
 }
 
 .border-component {
-  padding: 1rem 2rem;
-  border: 1px solid #636e72;
-  border-radius: 5px;
+  @include borderBox;
   margin-bottom: 2rem;
   &:first-child {
     margin-top: 3rem;
@@ -52,6 +54,10 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include respond-max(xs) {
+   flex-direction: column;
+   
+  }
 }
 
 .btn-toggle {
@@ -89,6 +95,9 @@ h2 {
     top: 0;
     box-shadow: 1px 16px 9px 1px rgba(24,75,112,1);
     background: #0984e3;
+  }
+  @include respond-max(xs) {
+    margin-bottom: 1rem;
   }
 }
 
