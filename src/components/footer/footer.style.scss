@@ -1,7 +1,10 @@
 @import '../../scss/mediaqueries';
 .footer {
-  height: 10rem;
+  height: 11rem;
   background-color: #2d3436;
+  @include respond-max(xs) {
+    height: 15rem;
+  }
   &-content {
     margin: 0 auto;
     max-width: 138rem;
@@ -11,6 +14,7 @@
     align-items: center;
     @include respond-max(xs) {
      justify-content: center;
+      flex-direction: column;
     }
   }
   &-message {
@@ -22,20 +26,27 @@
       height: 4rem;
       width: 5rem;
       fill:#55efc4;
-      
     }
   }
   h2 {
     color:#55efc4;
+    font-weight: normal;
   }
-  .currency-section {}
+  .currency-section {
+    @include respond-max(xs) {
+      margin-top: 1rem;
+    }
+  }
   
   .currency {
-    
       margin-left: 5px;
-      color:#74b9ff;
+      color:#fdcb6e;
+    .ron {
+      font-size: 1.2rem;
+    }
     i {
-    
+      font-weight: lighter;
+      font-size: 9px;
     }
   }
  

@@ -3,7 +3,7 @@ import Chart from "react-apexcharts";
 import './age-situation.styles.scss';
 import UpdateDate from "../commons/updataDate/update-date";
 
-const AgeSituation =({ages, propertiesAges, valuesAges, updateDate}) => {
+const AgeSituation =({ propertiesAges, valuesAges, updateDate}) => {
   //console.log('ages:', ages);
   //console.log(propertiesAges, valuesAges);
   

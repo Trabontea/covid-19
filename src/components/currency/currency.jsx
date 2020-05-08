@@ -19,22 +19,21 @@ const Currency = () => {
    //console.log(currency)
    const currencyArray = Object.values(currency);
    //console.log(currencyArray[0]);
-
   
   return(
     <div className="currency-section">
       {hasError ? '' :
         <div className="currency">
-          <p>
+          <p className="ron">
             <span>Curs Valutar: 1 EUR = </span>
             {
-              currencyArray[0] && Object.keys(currencyArray[0]).map((item, i) =>{
+              currencyArray[0] && Object.keys(currencyArray[0]).map(item =>{
                 let ron;
                 if (item === "RON") {
                   ron = currencyArray[0][item];
                   return ron
                 }
-                return <span key={i}>{ ron } </span>
+                return <span key={item}>{ ron } </span>
                 }
               )
             }
@@ -45,7 +44,6 @@ const Currency = () => {
           </p>
           <p> <i>Curs European Central Bank</i></p>
         </div>
-        
       }
     </div>
   )

@@ -3,16 +3,25 @@ import {DateLocale} from "../utils/utils";
 import TableHead from "../commons/tableHead/tableHead";
 import _ from "lodash";
 import UpdateDate from "../commons/updataDate/update-date";
+import {columns} from "./columns";
 
-const DailyHistory = ({history, sortColumn, onSort, updateDate}) => {
+const DailyHistory = ({history, updateDate}) => {
   const [show, setShow] = useState({show: false});
+  const [sortColumn, setSortColumn] = useState({path: 'datePublishedString', order: 'desc'});
   
-  const columns = [
-    {path:'datePublished', label: 'Data'},
-    {path:'infected', label: 'Infectati'},
-    {path:'cured', label: 'Vindecati' },
-    {path:'deaths', label: 'Decedati'}
-  ];
+  
+  
+  const handleSort = path => {
+    setSortColumn({path: path, order: 'asc'});
+    if(sortColumn.path === path && sortColumn.order === "asc") {
+      setSortColumn({path: path, order: 'desc'});
+    }
+    else {
+      sortColumn.path = path;
+      sortColumn.order = 'asc';
+    }
+  };
+  
   // console.log('aaa', sortColumn);
   const sorted = _.orderBy(history, [sortColumn.path], [sortColumn.order]);
   
@@ -30,7 +39,7 @@ const DailyHistory = ({history, sortColumn, onSort, updateDate}) => {
         </div>
       </div>
         <div  className="table" style={{display: show ? 'none': 'block'}}>
-          <TableHead columns={columns} onSort={onSort}/>
+          <TableHead columns={columns} onSort={handleSort}/>
           <ul className="list">
             {history  && sorted.map(item =>
             (<li className="row" key={item.datePublished}>

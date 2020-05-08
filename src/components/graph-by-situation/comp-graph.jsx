@@ -46,7 +46,8 @@ const CompGraph = ({date, number, name, updateDate, nameComp}) => {
         options={options}
         series={series}
         type="area"
-        height={350} />
+        height={350}
+      />
     </div>
   )
 };

@@ -7,7 +7,7 @@ const Footer =()=> (
   <div className="footer">
     <div className="footer-content">
       <div className="footer-message">
-        <h2>Spalati-va pe maini !</h2>
+        <h2>Spalati-va pe maini!</h2>
         <Icon/>
       </div>
         <Currency />

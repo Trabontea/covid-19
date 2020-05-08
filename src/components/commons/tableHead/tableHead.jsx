@@ -6,7 +6,7 @@ import ReactTooltip from "react-tooltip";
 const TableHead = ({columns, onSort}) => {
   return (
     <ul className="head">
-      {columns && columns.map((column, i) => (
+      {columns && columns.map(column => (
           <li key={column.path}>
             <div className="cell">
               <span
