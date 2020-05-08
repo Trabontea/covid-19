@@ -16,7 +16,6 @@ const DailyHistory = ({history, sortColumn, onSort, updateDate}) => {
   // console.log('aaa', sortColumn);
   const sorted = _.orderBy(history, [sortColumn.path], [sortColumn.order]);
   
-  
   return (
     <div className="daily-history" style={{ height: show ? '10rem': 'auto'}}>
       <div className="title-section">

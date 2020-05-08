@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from "react";
-import XMLParser from 'react-xml-parser';
+import {DateLocale} from "../utils/utils";
 
 const Currency = () => {
   const [currency, setCurrency] = useState({});
   const [hasError, setErrors] = useState(false);
   
   async function fetchData() {
-    const res = await fetch('');
+    const res = await fetch('https://api.exchangeratesapi.io/latest');
     res
-      .text()
+      .json()
       .then(res =>setCurrency(res))
       .catch(err => setErrors(err));
   }
@@ -16,17 +16,38 @@ const Currency = () => {
     fetchData();
   }, []);
   
+   //console.log(currency)
+   const currencyArray = Object.values(currency);
+   //console.log(currencyArray[0]);
 
   
   return(
-    <React.Fragment>
+    <div className="currency-section">
       {hasError ? '' :
         <div className="currency">
-          <span>Curs Valutar: 1 EUR = </span>
-          <span>{currency && currency.rate} RON</span>
-      </div>
+          <p>
+            <span>Curs Valutar: 1 EUR = </span>
+            {
+              currencyArray[0] && Object.keys(currencyArray[0]).map((item, i) =>{
+                let ron;
+                if (item === "RON") {
+                  ron = currencyArray[0][item];
+                  return ron
+                }
+                return <span key={i}>{ ron } </span>
+                }
+              )
+            }
+            <span>&#32;RON</span>
+          </p>
+          <p className="update">
+            <i>Data actualizarii: {currency.date && DateLocale(currency.date)} </i>
+          </p>
+          <p> <i>Curs European Central Bank</i></p>
+        </div>
+        
       }
-    </React.Fragment>
+    </div>
   )
 };
 

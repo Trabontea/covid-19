@@ -40,6 +40,7 @@ const Directory = () => {
   };
   
   const dataArray = Object.values(data);
+  //console.log(dataArray)
   const general = dataArray[0];
   const currDay = dataArray[1];
   const percentagePersons = dataArray[2];

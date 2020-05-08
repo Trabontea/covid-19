@@ -4,8 +4,8 @@ import './age-situation.styles.scss';
 import UpdateDate from "../commons/updataDate/update-date";
 
 const AgeSituation =({ages, propertiesAges, valuesAges, updateDate}) => {
-  console.log('ages:', ages);
-  console.log(propertiesAges, valuesAges);
+  //console.log('ages:', ages);
+  //console.log(propertiesAges, valuesAges);
   
   const dataChart = {
     options: {
