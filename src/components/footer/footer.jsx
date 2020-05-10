@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as Icon} from '../../assets/hands-and-gestures.svg';
 import './footer.style.scss';
 import Currency from "../currency/currency";
+import Countdown from "../countdown/countdown";
 
 const Footer =()=> (
   <div className="footer">
@@ -10,7 +11,8 @@ const Footer =()=> (
         <h2>Spalati-va pe maini!</h2>
         <Icon/>
       </div>
-        <Currency />
+      <Countdown/>
+      <Currency />
     </div>
     
   </div>

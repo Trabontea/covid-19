@@ -6,49 +6,41 @@ const Currency = () => {
   const [hasError, setErrors] = useState(false);
   
   async function fetchData() {
-    const res = await fetch('https://api.exchangeratesapi.io/latest');
-    res
+    const response = await fetch('https://api.exchangeratesapi.io/latest');
+    response
       .json()
-      .then(res =>setCurrency(res))
+      .then(response =>setCurrency(response))
       .catch(err => setErrors(err));
   }
   useEffect(() => {
     fetchData();
   }, []);
   
-   //console.log(currency)
    const currencyArray = Object.values(currency);
    //console.log(currencyArray[0]);
   
   return(
     <div className="currency-section">
-      {hasError ? '' :
+      { hasError ? '' :
         <div className="currency">
           <p className="ron">
             <span>Curs Valutar: 1 EUR = </span>
             {
-              currencyArray[0] && Object.keys(currencyArray[0]).map(item =>{
-                let ron;
-                if (item === "RON") {
-                  ron = currencyArray[0][item];
-                  return ron
-                }
-                return <span key={item}>{ ron } </span>
-                }
-              )
+              currencyArray[0] && Object.keys(currencyArray[0])
+                .filter(item => item === 'RON')
+                .map(item => <span key={item}>{ currencyArray[0][item]} {item} </span> )
             }
-            <span>&#32;RON</span>
           </p>
           <p className="update">
             <i>Data actualizarii: {currency.date && DateLocale(currency.date)} </i>
           </p>
-          <p> <i>Curs European Central Bank</i></p>
+          <p className="update">
+            <i>Curs European Central Bank</i>
+          </p>
         </div>
       }
     </div>
   )
 };
-
-
 
 export default Currency;

@@ -11,7 +11,7 @@
     margin-left: 0;
     border-radius: 0;
     padding: 0;
-    border-bottom: 1px dotted #fdcb6e;
+    border-bottom: 1px dotted #55efc4;
   }
 }
 
@@ -26,7 +26,7 @@
     font-size: 2rem;
     color: #ffffff;
     @include respond-max(xs) {
-      font-size: 1.6rem
+      font-size: 1.8rem
     }
   }
   .card-value {
@@ -42,7 +42,10 @@
 .card-white {
   @include borderBox;
   @include respond-max(xs) {
-    border: none;
+    border-radius: .5rem;
+    border: 1px solid #0984e3;
+    padding: 0 2.5rem;
+    margin-top: 2rem;
   }
   margin-top: 1rem;
   margin-left: 0;

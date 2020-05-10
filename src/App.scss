@@ -45,8 +45,14 @@ h2 {
 .border-component {
   @include borderBox;
   margin-bottom: 2rem;
+  @include respond-max(xs) {
+    margin-bottom: 0;
+  }
   &:first-child {
     margin-top: 3rem;
+    @include respond-max(xs) {
+      margin-top: 1rem;
+    }
   }
 }
 

@@ -3,7 +3,7 @@
   height: 11rem;
   background-color: #2d3436;
   @include respond-max(xs) {
-    height: 15rem;
+    height: auto;
   }
   &-content {
     margin: 0 auto;
@@ -43,10 +43,33 @@
       color:#fdcb6e;
     .ron {
       font-size: 1.2rem;
+      @include respond-max(xs) {
+        text-align: center;
+      }
     }
     i {
       font-weight: lighter;
       font-size: 9px;
+      
+    }
+    .update {
+      @include respond-max(xs) {
+        text-align: center;
+      }
+    }
+  }
+  .countdown {
+    color:#81ecec;
+    text-align: center;
+    p{
+      font-size: 1.6rem;
+      &:nth-child(2) {
+        font-size: 1.4rem;
+        color: #81ecec;
+      }
+    }
+    @include respond-max(xs) {
+      margin-top: 1rem;
     }
   }
  
