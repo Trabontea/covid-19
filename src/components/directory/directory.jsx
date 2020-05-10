@@ -9,7 +9,7 @@ import Counties from "../counties/counties";
 import InfoGeneral from "../info-general/info-general";
 import Loader from "../loader/loader";
 import GraphBySituation from "../graph-by-situation/graph-by-situation";
-
+import Footer from "../footer/footer";
 
 const Directory = () => {
   const [hasError, setErrors] = useState(false);
@@ -28,8 +28,6 @@ const Directory = () => {
     fetchData();
   }, []);
   
-  
-  
   const dataArray = Object.values(data);
   //console.log(dataArray)
   const general = dataArray[0];
@@ -40,9 +38,10 @@ const Directory = () => {
   return (
     <React.Fragment>
       {hasError ? hasError :
+        <div className="App" style={ {height: general ? '' : '0' }}>
         <div className="container">
           {general  ?
-            <div className="website-title">
+            <div className="website-title" >
               <h1>Situatie COVID-19 Romania</h1>
               <p>
                 <span>Data Publicarii: </span>
@@ -102,6 +101,8 @@ const Directory = () => {
               />  : ''
             }
           </section>
+        </div>
+          {general  ? <Footer /> : ''}
         </div>
       }
     </React.Fragment>
