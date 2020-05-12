@@ -10,10 +10,8 @@
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
 }
-li { list-style: none}
 
-.container {
-}
+li { list-style: none}
 
 h2 {
   color: #57606f;
@@ -26,7 +24,7 @@ h2 {
 }
 
 .daily-history {
-  flex:1;
+  flex: 1;
   margin-right: 1rem;
   @include respond-max(xs) {
     margin-right: 0;
@@ -34,15 +32,19 @@ h2 {
   }
 }
 
-.daily-history, .counties-situation {
+.daily-history, .counties-situation, .cumulative {
   @include borderBox;
   @include respond-max(xs) {
     width: 100%;
   }
 }
 
+.cumulative {
+  margin-right: 0;
+}
+
 .counties-situation {
-  flex:1
+  flex:1;
 }
 
 .border-component {
@@ -65,7 +67,6 @@ h2 {
   align-items: center;
   @include respond-max(xs) {
    flex-direction: column;
-   
   }
 }
 
@@ -139,6 +140,91 @@ h2 {
         font-size: 1.3rem;
       }
     }
-   
   }
+}
+
+
+
+
+.container  {
+  margin : 0 auto;
+  max-width: 138rem;
+  .current-date, .generals {
+    @include width-custom(138rem);
+  }
+  
+  .website-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    @include respond-max(xs) {
+      flex-direction: column;
+    }
+    p {
+      color: #2d3436;
+      font-size: 2rem;
+      font-weight: 500;
+      @include respond-max(xs) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  
+  h1 {
+    color: #0984e3;
+    font-size: 3rem;
+    @include respond-max(xs) {
+      font-size: 2rem;
+    }
+  }
+  
+  .graphic {
+    margin-top:5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include respond-max(xs) {
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+    }
+  }
+  
+  .percentage-persons {
+    display: flex;
+    flex-direction: column;
+    @include respond-max(xs) {
+      align-items: center;
+    }
+  }
+  .history-section {
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    @include respond-max(xs) {
+      margin-top: 0;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+  }
+  .cumulative-section {
+    margin-bottom: 3rem;
+    @include respond-max(xs) {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+
+.option {
+  display: flex;
+  justify-content: center;
 }

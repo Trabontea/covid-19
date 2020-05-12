@@ -5,9 +5,9 @@ import _ from "lodash";
 import UpdateDate from "../commons/updataDate/update-date";
 import {columns} from "./columns";
 
-const DailyHistory = ({history, updateDate}) => {
+const Cumulative = ({history, updateDate}) => {
   const [show, setShow] = useState({show: false});
-  const [sortColumn, setSortColumn] = useState({path: 'datePublishedString', order: 'desc'});
+  const [sortColumn, setSortColumn] = useState({path: 'date_string', order: 'desc'});
   
   
   
@@ -26,37 +26,35 @@ const DailyHistory = ({history, updateDate}) => {
   const sorted = _.orderBy(history, [sortColumn.path], [sortColumn.order]);
   
   return (
-    <div className="daily-history" style={{ height: show ? '10rem': 'auto'}}>
+    <div className="cumulative" style={{ height: show ? '10rem': 'auto'}}>
       <div className="title-section">
         <div className="left">
-          <h2>Numar de cazuri pe zile</h2>
+          <h2>Numar de cazuri cumulate pe zile</h2>
           <UpdateDate updateDate={updateDate}/>
         </div>
         <div className="right">
-          <button
-            className='btn-toggle'
-            onClick={() => setShow(!show)}>
-            {show ? "Vezi tabelul" : "Ascunde Tabelul"}
-          </button>
+          <button className='btn-toggle' onClick={() => setShow(!show)}
+          
+          >{show ? "Vezi tabelul" : "Ascunde Tabelul"}</button>
         </div>
       </div>
-        <div  className="table" style={{display: show ? 'none': 'block'}}>
-          <TableHead columns={columns} onSort={handleSort}/>
-          <ul className="list">
-            {history  && sorted.map(item =>
-            (<li className="row" key={item.datePublished}>
-                <span className="value">{DateLocale(item.datePublishedString)}</span>
-                <span className="value">{item.infected}</span>
+      <div  className="table" style={{display: show ? 'none': 'block'}}>
+        <TableHead columns={columns} onSort={handleSort}/>
+        <ul className="list">
+          {history  && sorted.map(item =>
+            (<li className="row" key={item.date}>
+                <span className="value">{DateLocale(item.date_string)}</span>
+                <span className="value">{item.confirmed}</span>
                 <span className="value">{item.cured}</span>
                 <span className="value">{item.deaths}</span>
               </li>
-                )
-              )
-            }
-          </ul>
-        </div>
+            )
+          )
+          }
+        </ul>
       </div>
+    </div>
   )
 };
 
-export default DailyHistory;
+export default Cumulative;

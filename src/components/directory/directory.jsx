@@ -3,18 +3,17 @@ import Card  from '../commons/card/card';
 import DailyHistory from "../daily-history/daily-history";
 import {DateLocale} from "../utils/utils";
 import AgesSituation from "../age-situation/age-situation"
-import './directory.style.scss'
 import Percentage from "../percentage/percentage";
 import Counties from "../counties/counties";
 import InfoGeneral from "../info-general/info-general";
 import Loader from "../loader/loader";
 import GraphBySituation from "../graph-by-situation/graph-by-situation";
 import Footer from "../footer/footer";
+import Cumulative from "../cumulative/cumulative";
 
 const Directory = () => {
-  const [hasError, setErrors] = useState(false);
   const [data, setData] = useState({});
- 
+  const [hasError, setErrors] = useState(false);
   
   async function fetchData() {
     const res = await fetch("https://api1.datelazi.ro/api/v2/data/ui-data");
@@ -26,28 +25,34 @@ const Directory = () => {
   
   useEffect(() => {
     fetchData();
-  }, []);
+    return() => {
+    }
+  },[]);
   
   const dataArray = Object.values(data);
-  //console.log(dataArray)
+  //console.log(dataArray);
   const general = dataArray[0];
   const currDay = dataArray[1];
   const percentagePersons = dataArray[2];
   const counties = dataArray[5];
+  const quickStats = dataArray[4];
   
   return (
     <React.Fragment>
-      {hasError ? hasError :
+      { hasError ? hasError :
         <div className="App" style={ {height: general ? '' : '0' }}>
-        <div className="container">
+          <div className="container">
           {general  ?
-            <div className="website-title" >
-              <h1>Situatie COVID-19 Romania</h1>
-              <p>
-                <span>Data Publicarii: </span>
-                <span>{DateLocale(general.datePublishedString)}</span>
-              </p>
-            </div> : <Loader/>
+            <div>
+              <div className="website-title" >
+                <h1>Situatie COVID-19 Romania</h1>
+                <p>
+                  <span>Data Publicarii: </span>
+                  <span>{DateLocale(general.datePublishedString)}</span>
+                </p>
+              </div>
+              
+            </div>: <Loader/>
           }
           {general && currDay ?
             <InfoGeneral general={general} currDay={currDay} />
@@ -99,6 +104,15 @@ const Directory = () => {
                 dataCounties={counties.data}
                 updateDate = {counties.lastUpdatedString}
               />  : ''
+            }
+          </section>
+          
+          <section className="cumulative-section">
+            {quickStats ?
+              <Cumulative
+                history={quickStats.history}
+                updateDate={quickStats.last_updated_on_string}
+              /> : ''
             }
           </section>
         </div>

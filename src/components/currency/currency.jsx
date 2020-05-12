@@ -1,20 +1,33 @@
 import React, {useEffect, useState} from "react";
 import {DateLocale} from "../utils/utils";
+import Axios from "axios";
 
 const Currency = () => {
   const [currency, setCurrency] = useState({});
   const [hasError, setErrors] = useState(false);
   
-  async function fetchData() {
-    const response = await fetch('https://api.exchangeratesapi.io/latest');
-    response
-      .json()
-      .then(response =>setCurrency(response))
-      .catch(err => setErrors(err));
-  }
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const url = 'https://api.exchangeratesapi.io/latest';
+  
+  useEffect(()=> {
+    let source = Axios.CancelToken.source();
+    const loadData = async () => {
+      try {
+        const response = await Axios.get(url, {
+          cancelToken: source.token
+        });
+        setCurrency(response.data);
+      }
+      catch(error) {
+        setErrors(true)
+        throw error
+      }
+    };
+    
+    loadData();
+    return() => {
+      source.cancel();
+    };
+  }, [url]);
   
    const currencyArray = Object.values(currency);
    //console.log(currencyArray[0]);

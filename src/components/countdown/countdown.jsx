@@ -15,7 +15,6 @@ const Countdown = () => {
         secunde: Math.floor((difference / 1000) % 60)
       };
     }
-    
     return timeLeft;
   };
   
@@ -25,6 +24,11 @@ const Countdown = () => {
     setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
+    
+    return() => {
+    clearTimeout(calculateTimeLeft())
+    }
+    
   });
   
   const timerComponents = [];

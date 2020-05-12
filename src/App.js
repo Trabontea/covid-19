@@ -1,11 +1,12 @@
 import React from "react";
-import Directory from "./components/directory/directory";
 import './App.scss';
+import Directory from "./components/directory/directory";
+
 
 const App = () =>  {
       return (
         <div>
-          <Directory />
+         <Directory />
         </div>
       )
 };
