@@ -1,5 +1,6 @@
 {
   "name": "covid-19",
+  "homepage": "http://covid19-romania.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
