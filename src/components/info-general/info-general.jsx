@@ -8,7 +8,7 @@ const InfoGeneral =({general, currDay}) => {
   const [hasError, setErrors] = useState(false);
   
   async function fetchData() {
-    const url = "https://api.apify.com/v2/key-value-stores/KUlj8EGfDGHiB0gU1/records/LATEST?disableRedirect=true";
+    const url = "https://apifier-key-value-store-prod.s3.amazonaws.com/KUlj8EGfDGHiB0gU1/LATEST?AWSAccessKeyId=AKIAJTQHBVH6QKNNBOIQ&Expires=1589993817&Signature=Uc7uXvxbhSxo0tGQIPXq%2B%2BmwDsw%3D";
     const res = await fetch(url);
     res
       .json()
