@@ -13,7 +13,6 @@
     "react": "^16.13.1",
     "react-apexcharts": "^1.3.7",
     "react-dom": "^16.13.1",
-    "react-map-chart": "^2.1.0",
     "react-scripts": "3.4.1",
     "react-tooltip": "^4.2.5"
   },

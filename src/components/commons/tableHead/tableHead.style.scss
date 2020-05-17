@@ -29,7 +29,7 @@
           white-space: nowrap;
           width: 50px;
           overflow: hidden;
-          text-overflow: "----";
+          text-overflow: ellipsis;
     
         }
       }
