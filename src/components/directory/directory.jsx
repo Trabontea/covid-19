@@ -24,9 +24,9 @@ const Directory = () => {
   }
   
   useEffect(() => {
+    let mounted = true;
     fetchData();
-    return() => {
-    }
+    return () => mounted = false;
   },[]);
   
   const dataArray = Object.values(data);

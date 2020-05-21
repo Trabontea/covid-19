@@ -17,9 +17,9 @@ const InfoGeneral =({general, currDay}) => {
   }
   
   useEffect(() => {
+    let mounted = true;
     fetchData();
-    return() => {
-    }
+    return () => mounted = false;
   },[]);
   
   const total = general.total;
