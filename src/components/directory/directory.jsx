@@ -15,19 +15,21 @@ const Directory = () => {
   const [data, setData] = useState({});
   const [hasError, setErrors] = useState(false);
   
-  async function fetchData() {
-    const res = await fetch("https://api1.datelazi.ro/api/v2/data/ui-data");
-    res
-      .json()
-      .then(res => setData(res))
-      .catch(err => setErrors(err));
-  }
-  
   useEffect(() => {
-    let mounted = true;
-    fetchData();
-    return () => mounted = false;
-  },[]);
+    const abortController = new AbortController();
+    const signal = abortController.signal;
+    const API_URL = "https://api1.datelazi.ro/api/v2/data/ui-data";
+    
+    fetch(API_URL, { signal: signal })
+      .then(results => results.json())
+      .then(data => {
+        setData(data);
+      })
+      .catch(error => setErrors(error));
+    return function cleanup() {
+      abortController.abort();
+    };
+  }, []);
   
   const dataArray = Object.values(data);
   //console.log(dataArray);

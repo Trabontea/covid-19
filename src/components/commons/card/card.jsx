@@ -11,7 +11,7 @@ const Card = ({info, name, procent, option, updateDate}) => {
       }
       { updateDate ? <UpdateDate updateDate={updateDate} /> : ''}
       <p className='card-value'>
-        <span>{info} </span>
+        <span>{info ? info : 'N/A'} </span>
         <span className="card-procent">{procent}{procent ? '% din total' : ''}</span>
       </p>
       

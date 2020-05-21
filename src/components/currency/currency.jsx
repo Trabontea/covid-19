@@ -18,7 +18,7 @@ const Currency = () => {
         setCurrency(response.data);
       }
       catch(error) {
-        setErrors(true)
+        setErrors(true);
         throw error
       }
     };
