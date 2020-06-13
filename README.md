@@ -46,3 +46,9 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+Deploy on GitHub Pages
+
+### `npm run deploy`
+
+Viwe app
+https://trabontea.github.io/covid-19/
