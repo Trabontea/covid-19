@@ -1,7 +1,7 @@
 {
   "name": "covid-19",
   "version": "0.1.1",
-  "homepage": "https://trabontea.github.io/covid-19",
+  "homepage": " https://trabontea.github.io/covid-19/",
   "private": true,
   "dependencies": {
     "@reach/tooltip": "^0.10.1",
