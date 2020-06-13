@@ -1,285 +1,525 @@
 export const data = {
   "ageHistogram": {
-    "datePublished": 1586367480,
-    "datePublishedString": "2020-04-09",
+    "datePublished": 1590076320,
+    "datePublishedString": "2020-05-21",
     "last_updated_on": -1,
-    "last_updated_on_string": "2020-04-09",
+    "last_updated_on_string": "2020-05-21",
     "histogram": {
-      "0-9": 113,
-      "10-19": 138,
-      "20-29": 428,
-      "30-39": 838,
-      "40-49": 1338,
-      "50-59": 1094,
-      "60-69": 664,
-      "70-79": 373,
-      ">80": 162,
-      "în procesare": 54
+      "0-9": 489,
+      "10-19": 645,
+      "20-29": 1453,
+      "30-39": 2542,
+      "40-49": 4120,
+      "50-59": 3618,
+      "60-69": 2356,
+      "70-79": 1354,
+      ">80": 935,
+      "în procesare": 73
     },
-    "total": 5202,
+    "total": 17585,
     "stale": false
   },
   "dailyStats": {
     "last_updated_on": -1,
-    "last_updated_on_string": "2020-04-09",
+    "last_updated_on_string": "2020-05-21",
     "stale": false,
     "currentDay": {
-      "datePublished": 1586367480,
-      "datePublishedString": "2020-04-09",
-      "infected": 5202,
-      "cured": 647,
-      "deaths": 248,
+      "datePublished": 1590076320,
+      "datePublishedString": "2020-05-21",
+      "infected": 17585,
+      "cured": 10581,
+      "deaths": 1156,
       "averageAge": "46",
       "complete": true
     },
-    "history": [
-      {
-        "datePublished": 1584530100,
-        "datePublishedString": "2020-03-18",
-        "infected": 43,
-        "cured": 0,
-        "deaths": 0,
-        "complete": true
-      },
-      {
-        "datePublished": 1584616500,
-        "datePublishedString": "2020-03-19",
-        "infected": 17,
-        "cured": 6,
-        "deaths": 0,
-        "complete": true
-      },
-      {
-        "datePublished": 1584702900,
-        "datePublishedString": "2020-03-20",
-        "infected": 31,
-        "cured": 6,
-        "deaths": 0,
-        "complete": true
-      },
-      {
-        "datePublished": 1584789300,
-        "datePublishedString": "2020-03-21",
-        "infected": 59,
-        "cured": 21,
-        "deaths": 0,
-        "complete": true
-      },
-      {
-        "datePublished": 1584875700,
-        "datePublishedString": "2020-03-22",
-        "infected": 66,
-        "cured": 12,
-        "deaths": 2,
-        "complete": true
-      },
-      {
-        "datePublished": 1584962100,
-        "datePublishedString": "2020-03-23",
-        "infected": 143,
-        "cured": 9,
-        "deaths": 2,
-        "complete": true
-      },
-      {
-        "datePublished": 1585048500,
-        "datePublishedString": "2020-03-24",
-        "infected": 186,
-        "cured": 6,
-        "deaths": 4,
-        "complete": true
-      },
-      {
-        "datePublished": 1585134900,
-        "datePublishedString": "2020-03-25",
-        "infected": 144,
-        "cured": 7,
-        "deaths": 9,
-        "complete": true
-      },
-      {
-        "datePublished": 1585256040,
-        "datePublishedString": "2020-03-26",
-        "infected": 123,
-        "cured": 8,
-        "deaths": 6,
-        "complete": true
-      },
-      {
-        "datePublished": 1585333080,
-        "datePublishedString": "2020-03-27",
-        "infected": 263,
-        "cured": 21,
-        "deaths": 3,
-        "complete": true
-      },
-      {
-        "datePublished": 1585432140,
-        "datePublishedString": "2020-03-28",
-        "infected": 160,
-        "cured": 24,
-        "deaths": 11,
-        "complete": true
-      },
-      {
-        "datePublished": 1585506480,
-        "datePublishedString": "2020-03-29",
-        "infected": 308,
-        "cured": 30,
-        "deaths": 6,
-        "complete": true
-      },
-      {
-        "datePublished": 1585595280,
-        "datePublishedString": "2020-03-30",
-        "infected": 192,
-        "cured": 11,
-        "deaths": 22,
-        "complete": true
-      },
-      {
-        "datePublished": 1585681080,
-        "datePublishedString": "2020-03-31",
-        "infected": 293,
-        "cured": 40,
-        "deaths": 17,
-        "complete": true
-      },
-      {
-        "datePublished": 1585764600,
-        "datePublishedString": "2020-04-01",
-        "infected": 215,
-        "cured": 32,
-        "deaths": 10,
-        "complete": true
-      },
-      {
-        "datePublished": 1585853340,
-        "datePublishedString": "2020-04-02",
-        "infected": 278,
-        "cured": 15,
-        "deaths": 23,
-        "complete": true
-      },
-      {
-        "datePublished": 1585923720,
-        "datePublishedString": "2020-04-03",
-        "infected": 445,
-        "cured": 16,
-        "deaths": 18,
-        "complete": true
-      },
-      {
-        "datePublished": 1586016060,
-        "datePublishedString": "2020-04-04",
-        "infected": 430,
-        "cured": 46,
-        "deaths": 13,
-        "complete": true
-      },
-      {
-        "datePublished": 1586098380,
-        "datePublishedString": "2020-04-05",
-        "infected": 251,
-        "cured": 45,
-        "deaths": 5,
-        "complete": true
-      },
-      {
-        "datePublished": 1586203560,
-        "datePublishedString": "2020-04-06",
-        "infected": 193,
-        "cured": 32,
-        "deaths": 25,
-        "complete": true
-      },
-      {
-        "datePublished": 1586264940,
-        "datePublishedString": "2020-04-07",
-        "infected": 360,
-        "cured": 54,
-        "deaths": 21,
-        "complete": true
-      },
-      {
-        "datePublished": 1586373540,
-        "datePublishedString": "2020-04-08",
-        "infected": 344,
-        "cured": 68,
-        "deaths": 23,
-        "complete": true
-      },
-      {
-        "datePublished": 1586367480,
-        "datePublishedString": "2020-04-09",
-        "infected": 441,
-        "cured": 119,
-        "deaths": 28,
-        "complete": true
-      }
-    ]
+    "history": [{
+      "datePublished": 1584530100,
+      "datePublishedString": "2020-03-18",
+      "infected": 43,
+      "cured": 0,
+      "deaths": 0,
+      "complete": true
+    }, {
+      "datePublished": 1584616500,
+      "datePublishedString": "2020-03-19",
+      "infected": 17,
+      "cured": 6,
+      "deaths": 0,
+      "complete": true
+    }, {
+      "datePublished": 1584702900,
+      "datePublishedString": "2020-03-20",
+      "infected": 31,
+      "cured": 6,
+      "deaths": 0,
+      "complete": true
+    }, {
+      "datePublished": 1584789300,
+      "datePublishedString": "2020-03-21",
+      "infected": 59,
+      "cured": 21,
+      "deaths": 0,
+      "complete": true
+    }, {
+      "datePublished": 1584875700,
+      "datePublishedString": "2020-03-22",
+      "infected": 66,
+      "cured": 12,
+      "deaths": 2,
+      "complete": true
+    }, {
+      "datePublished": 1584962100,
+      "datePublishedString": "2020-03-23",
+      "infected": 143,
+      "cured": 9,
+      "deaths": 2,
+      "complete": true
+    }, {
+      "datePublished": 1585048500,
+      "datePublishedString": "2020-03-24",
+      "infected": 186,
+      "cured": 6,
+      "deaths": 4,
+      "complete": true
+    }, {
+      "datePublished": 1585134900,
+      "datePublishedString": "2020-03-25",
+      "infected": 144,
+      "cured": 7,
+      "deaths": 9,
+      "complete": true
+    }, {
+      "datePublished": 1585256040,
+      "datePublishedString": "2020-03-26",
+      "infected": 123,
+      "cured": 8,
+      "deaths": 6,
+      "complete": true
+    }, {
+      "datePublished": 1585333080,
+      "datePublishedString": "2020-03-27",
+      "infected": 263,
+      "cured": 21,
+      "deaths": 3,
+      "complete": true
+    }, {
+      "datePublished": 1585432140,
+      "datePublishedString": "2020-03-28",
+      "infected": 160,
+      "cured": 24,
+      "deaths": 11,
+      "complete": true
+    }, {
+      "datePublished": 1585506480,
+      "datePublishedString": "2020-03-29",
+      "infected": 308,
+      "cured": 30,
+      "deaths": 6,
+      "complete": true
+    }, {
+      "datePublished": 1585595280,
+      "datePublishedString": "2020-03-30",
+      "infected": 192,
+      "cured": 11,
+      "deaths": 22,
+      "complete": true
+    }, {
+      "datePublished": 1585681080,
+      "datePublishedString": "2020-03-31",
+      "infected": 293,
+      "cured": 40,
+      "deaths": 17,
+      "complete": true
+    }, {
+      "datePublished": 1585764600,
+      "datePublishedString": "2020-04-01",
+      "infected": 215,
+      "cured": 32,
+      "deaths": 10,
+      "complete": true
+    }, {
+      "datePublished": 1585853340,
+      "datePublishedString": "2020-04-02",
+      "infected": 278,
+      "cured": 15,
+      "deaths": 23,
+      "complete": true
+    }, {
+      "datePublished": 1585923720,
+      "datePublishedString": "2020-04-03",
+      "infected": 445,
+      "cured": 16,
+      "deaths": 18,
+      "complete": true
+    }, {
+      "datePublished": 1586016060,
+      "datePublishedString": "2020-04-04",
+      "infected": 430,
+      "cured": 46,
+      "deaths": 13,
+      "complete": true
+    }, {
+      "datePublished": 1586098380,
+      "datePublishedString": "2020-04-05",
+      "infected": 251,
+      "cured": 45,
+      "deaths": 5,
+      "complete": true
+    }, {
+      "datePublished": 1586203560,
+      "datePublishedString": "2020-04-06",
+      "infected": 193,
+      "cured": 32,
+      "deaths": 25,
+      "complete": true
+    }, {
+      "datePublished": 1586264940,
+      "datePublishedString": "2020-04-07",
+      "infected": 360,
+      "cured": 54,
+      "deaths": 21,
+      "complete": true
+    }, {
+      "datePublished": 1586373540,
+      "datePublishedString": "2020-04-08",
+      "infected": 344,
+      "cured": 68,
+      "deaths": 23,
+      "complete": true
+    }, {
+      "datePublished": 1586462400,
+      "datePublishedString": "2020-04-09",
+      "infected": 441,
+      "cured": 119,
+      "deaths": 28,
+      "complete": true
+    }, {
+      "datePublished": 1586534940,
+      "datePublishedString": "2020-04-10",
+      "infected": 265,
+      "cured": 82,
+      "deaths": 22,
+      "complete": true
+    }, {
+      "datePublished": 1586624340,
+      "datePublishedString": "2020-04-11",
+      "infected": 523,
+      "cured": 29,
+      "deaths": 21,
+      "complete": true
+    }, {
+      "datePublished": 1586710980,
+      "datePublishedString": "2020-04-12",
+      "infected": 310,
+      "cured": 94,
+      "deaths": 23,
+      "complete": true
+    }, {
+      "datePublished": 1586797020,
+      "datePublishedString": "2020-04-13",
+      "infected": 333,
+      "cured": 62,
+      "deaths": 17,
+      "complete": true
+    }, {
+      "datePublished": 1586873460,
+      "datePublishedString": "2020-04-14",
+      "infected": 246,
+      "cured": 137,
+      "deaths": 20,
+      "complete": true
+    }, {
+      "datePublished": 1586975340,
+      "datePublishedString": "2020-04-15",
+      "infected": 337,
+      "cured": 166,
+      "deaths": 21,
+      "complete": true
+    }, {
+      "datePublished": 1587032580,
+      "datePublishedString": "2020-04-16",
+      "infected": 491,
+      "cured": 140,
+      "deaths": 20,
+      "complete": true
+    }, {
+      "datePublished": 1587123540,
+      "datePublishedString": "2020-04-17",
+      "infected": 360,
+      "cured": 151,
+      "deaths": 19,
+      "complete": true
+    }, {
+      "datePublished": 1587222600,
+      "datePublishedString": "2020-04-18",
+      "infected": 351,
+      "cured": 222,
+      "deaths": 10,
+      "complete": true
+    }, {
+      "datePublished": 1587317280,
+      "datePublishedString": "2020-04-19",
+      "infected": 328,
+      "cured": 162,
+      "deaths": 30,
+      "complete": true
+    }, {
+      "datePublished": 1587406200,
+      "datePublishedString": "2020-04-20",
+      "infected": 190,
+      "cured": 125,
+      "deaths": 27,
+      "complete": true
+    }, {
+      "datePublished": 1587481080,
+      "datePublishedString": "2020-04-21",
+      "infected": 306,
+      "cured": 136,
+      "deaths": 20,
+      "complete": true
+    }, {
+      "datePublished": 1587580860,
+      "datePublishedString": "2020-04-22",
+      "infected": 468,
+      "cured": 253,
+      "deaths": 26,
+      "complete": true
+    }, {
+      "datePublished": 1587658740,
+      "datePublishedString": "2020-04-23",
+      "infected": 386,
+      "cured": 72,
+      "deaths": 21,
+      "complete": true
+    }, {
+      "datePublished": 1587742860,
+      "datePublishedString": "2020-04-24",
+      "infected": 321,
+      "cured": 339,
+      "deaths": 22,
+      "complete": true
+    }, {
+      "datePublished": 1587832380,
+      "datePublishedString": "2020-04-25",
+      "infected": 218,
+      "cured": 73,
+      "deaths": 34,
+      "complete": true
+    }, {
+      "datePublished": 1587915120,
+      "datePublishedString": "2020-04-26",
+      "infected": 401,
+      "cured": 164,
+      "deaths": 18,
+      "complete": true
+    }, {
+      "datePublished": 1588016460,
+      "datePublishedString": "2020-04-27",
+      "infected": 303,
+      "cured": 87,
+      "deaths": 27,
+      "complete": true
+    }, {
+      "datePublished": 1588085100,
+      "datePublishedString": "2020-04-28",
+      "infected": 277,
+      "cured": 263,
+      "deaths": 17,
+      "complete": true
+    }, {
+      "datePublished": 1588187940,
+      "datePublishedString": "2020-04-29",
+      "infected": 362,
+      "cured": 165,
+      "deaths": 30,
+      "complete": true
+    }, {
+      "datePublished": 1588275720,
+      "datePublishedString": "2020-04-30",
+      "infected": 262,
+      "cured": 448,
+      "deaths": 24,
+      "complete": true
+    }, {
+      "datePublished": 1590858720,
+      "datePublishedString": "2020-05-01",
+      "infected": 327,
+      "cured": 311,
+      "deaths": 27,
+      "complete": true
+    }, {
+      "datePublished": 1588433160,
+      "datePublishedString": "2020-05-02",
+      "infected": 165,
+      "cured": 219,
+      "deaths": 27,
+      "complete": true
+    }, {
+      "datePublished": 1588506300,
+      "datePublishedString": "2020-05-03",
+      "infected": 431,
+      "cured": 322,
+      "deaths": 19,
+      "complete": true
+    }, {
+      "datePublished": 1588619820,
+      "datePublishedString": "2020-05-04",
+      "infected": 349,
+      "cured": 400,
+      "deaths": 28,
+      "complete": true
+    }, {
+      "datePublished": 1588681080,
+      "datePublishedString": "2020-05-05",
+      "infected": 325,
+      "cured": 185,
+      "deaths": 23,
+      "complete": true
+    }, {
+      "datePublished": 1588786320,
+      "datePublishedString": "2020-05-06",
+      "infected": 270,
+      "cured": 334,
+      "deaths": 23,
+      "complete": true
+    }, {
+      "datePublished": 1588862040,
+      "datePublishedString": "2020-05-07",
+      "infected": 392,
+      "cured": 356,
+      "deaths": 24,
+      "complete": true
+    }, {
+      "datePublished": 1588952700,
+      "datePublishedString": "2020-05-08",
+      "infected": 312,
+      "cured": 279,
+      "deaths": 35,
+      "complete": true
+    }, {
+      "datePublished": 1589048940,
+      "datePublishedString": "2020-05-09",
+      "infected": 320,
+      "cured": 489,
+      "deaths": 16,
+      "complete": true
+    }, {
+      "datePublished": 1589125560,
+      "datePublishedString": "2020-05-10",
+      "infected": 231,
+      "cured": 139,
+      "deaths": 22,
+      "complete": true
+    }, {
+      "datePublished": 1589212680,
+      "datePublishedString": "2020-05-11",
+      "infected": 226,
+      "cured": 194,
+      "deaths": 21,
+      "complete": true
+    }, {
+      "datePublished": 1589297760,
+      "datePublishedString": "2020-05-12",
+      "infected": 190,
+      "cured": 440,
+      "deaths": 20,
+      "complete": true
+    }, {
+      "datePublished": 1589391060,
+      "datePublishedString": "2020-05-13",
+      "infected": 224,
+      "cured": 276,
+      "deaths": 34,
+      "complete": true
+    }, {
+      "datePublished": 1589474820,
+      "datePublishedString": "2020-05-14",
+      "infected": 245,
+      "cured": 1092,
+      "deaths": 17,
+      "complete": true
+    }, {
+      "datePublished": 1589555160,
+      "datePublishedString": "2020-05-15",
+      "infected": 190,
+      "cured": 317,
+      "deaths": 17,
+      "complete": true
+    }, {
+      "datePublished": 1589642460,
+      "datePublishedString": "2020-05-16",
+      "infected": 267,
+      "cured": 204,
+      "deaths": 24,
+      "complete": true
+    }, {
+      "datePublished": 1589738460,
+      "datePublishedString": "2020-05-17",
+      "infected": 167,
+      "cured": 316,
+      "deaths": 13,
+      "complete": true
+    }, {
+      "datePublished": 1589820780,
+      "datePublishedString": "2020-05-18",
+      "infected": 165,
+      "cured": 40,
+      "deaths": 13,
+      "complete": true
+    }, {
+      "datePublished": 1589902620,
+      "datePublishedString": "2020-05-19",
+      "infected": 155,
+      "cured": 236,
+      "deaths": 17,
+      "complete": true
+    }, {
+      "datePublished": 1589986320,
+      "datePublishedString": "2020-05-20",
+      "infected": 196,
+      "cured": 190,
+      "deaths": 10,
+      "complete": true
+    }, {
+      "datePublished": 1590076320,
+      "datePublishedString": "2020-05-21",
+      "infected": 198,
+      "cured": 225,
+      "deaths": 9,
+      "complete": true
+    }]
   },
   "genderStats": {
-    "datePublished": 1586367480,
-    "datePublishedString": "2020-04-09",
+    "datePublished": 1590076320,
+    "datePublishedString": "2020-05-21",
     "last_updated_on": -1,
     "last_updated_on_string": "2020-03-30",
     "percentageOfMen": 41.0,
     "percentageOfWomen": 55.0,
     "percentageOfChildren": 4.0,
     "totalPercentage": 100.0,
-    "totalNumber": 5202,
+    "totalNumber": 17585,
     "stale": true
   },
   "lastDataUpdateDetails": {
     "last_updated_on": -1,
-    "last_updated_on_string": "9 Aprilie la 20:38",
+    "last_updated_on_string": "21 Mai la 18:52",
     "charts": {
       "dailyStats": {
-        "contains": [
-          "numberInfected",
-          "numberDeceased",
-          "numberCured"
-        ],
-        "lastUpdatedOn": "2020-04-09",
+        "contains": ["numberInfected", "numberDeceased", "numberCured"],
+        "lastUpdatedOn": "2020-05-21",
         "stale": false
       },
       "quickStats": {
-        "contains": [
-          "numberInfected",
-          "numberDeceased",
-          "numberCured"
-        ],
-        "lastUpdatedOn": "2020-04-09",
+        "contains": ["numberInfected", "numberDeceased", "numberCured"],
+        "lastUpdatedOn": "2020-05-21",
         "stale": false
       },
-      "counties": {
-        "contains": [
-          "countyInfectionsNumbers"
-        ],
-        "lastUpdatedOn": "2020-04-09",
-        "stale": false
-      },
-      "ageHistogram": {
-        "contains": [
-          "distributionByAge"
-        ],
-        "lastUpdatedOn": "2020-04-09",
-        "stale": false
-      },
-      "averageAge": {
-        "contains": [
-          "distributionByAge"
-        ],
-        "lastUpdatedOn": "2020-03-30",
-        "stale": true
-      },
+      "counties": {"contains": ["countyInfectionsNumbers"], "lastUpdatedOn": "2020-05-21", "stale": false},
+      "ageHistogram": {"contains": ["distributionByAge"], "lastUpdatedOn": "2020-05-21", "stale": false},
+      "averageAge": {"contains": ["distributionByAge"], "lastUpdatedOn": "2020-03-30", "stale": true},
       "genderStats": {
-        "contains": [
-          "percentageOfWomen",
-          "percentageOfMen",
-          "percentageOfChildren"
-        ],
+        "contains": ["percentageOfWomen", "percentageOfMen", "percentageOfChildren"],
         "lastUpdatedOn": "2020-03-30",
         "stale": true
       }
@@ -287,485 +527,656 @@ export const data = {
   },
   "quickStats": {
     "last_updated_on": -1,
-    "last_updated_on_string": "2020-04-09",
+    "last_updated_on_string": "2020-05-21",
     "date": 0,
-    "totals": {
-      "date": 1586367480,
+    "totals": {"date": 1590076320, "date_string": "2020-05-21", "confirmed": 17585, "cured": 10581, "deaths": 1156},
+    "history": [{
+      "date": 1584530100,
+      "date_string": "2020-03-18",
+      "confirmed": 260,
+      "cured": 19,
+      "deaths": 0
+    }, {
+      "date": 1584616500,
+      "date_string": "2020-03-19",
+      "confirmed": 277,
+      "cured": 25,
+      "deaths": 0
+    }, {
+      "date": 1584702900,
+      "date_string": "2020-03-20",
+      "confirmed": 308,
+      "cured": 31,
+      "deaths": 0
+    }, {
+      "date": 1584789300,
+      "date_string": "2020-03-21",
+      "confirmed": 367,
+      "cured": 52,
+      "deaths": 0
+    }, {
+      "date": 1584875700,
+      "date_string": "2020-03-22",
+      "confirmed": 433,
+      "cured": 64,
+      "deaths": 2
+    }, {
+      "date": 1584962100,
+      "date_string": "2020-03-23",
+      "confirmed": 576,
+      "cured": 73,
+      "deaths": 4
+    }, {
+      "date": 1585048500,
+      "date_string": "2020-03-24",
+      "confirmed": 762,
+      "cured": 79,
+      "deaths": 8
+    }, {
+      "date": 1585134900,
+      "date_string": "2020-03-25",
+      "confirmed": 906,
+      "cured": 86,
+      "deaths": 17
+    }, {
+      "date": 1585256040,
+      "date_string": "2020-03-26",
+      "confirmed": 1029,
+      "cured": 94,
+      "deaths": 23
+    }, {
+      "date": 1585333080,
+      "date_string": "2020-03-27",
+      "confirmed": 1292,
+      "cured": 115,
+      "deaths": 26
+    }, {
+      "date": 1585432140,
+      "date_string": "2020-03-28",
+      "confirmed": 1452,
+      "cured": 139,
+      "deaths": 37
+    }, {
+      "date": 1585506480,
+      "date_string": "2020-03-29",
+      "confirmed": 1760,
+      "cured": 169,
+      "deaths": 43
+    }, {
+      "date": 1585595280,
+      "date_string": "2020-03-30",
+      "confirmed": 1952,
+      "cured": 180,
+      "deaths": 65
+    }, {
+      "date": 1585681080,
+      "date_string": "2020-03-31",
+      "confirmed": 2245,
+      "cured": 220,
+      "deaths": 82
+    }, {
+      "date": 1585764600,
+      "date_string": "2020-04-01",
+      "confirmed": 2460,
+      "cured": 252,
+      "deaths": 92
+    }, {
+      "date": 1585853340,
+      "date_string": "2020-04-02",
+      "confirmed": 2738,
+      "cured": 267,
+      "deaths": 115
+    }, {
+      "date": 1585923720,
+      "date_string": "2020-04-03",
+      "confirmed": 3183,
+      "cured": 283,
+      "deaths": 133
+    }, {
+      "date": 1586016060,
+      "date_string": "2020-04-04",
+      "confirmed": 3613,
+      "cured": 329,
+      "deaths": 146
+    }, {
+      "date": 1586098380,
+      "date_string": "2020-04-05",
+      "confirmed": 3864,
+      "cured": 374,
+      "deaths": 151
+    }, {
+      "date": 1586203560,
+      "date_string": "2020-04-06",
+      "confirmed": 4057,
+      "cured": 406,
+      "deaths": 176
+    }, {
+      "date": 1586264940,
+      "date_string": "2020-04-07",
+      "confirmed": 4417,
+      "cured": 460,
+      "deaths": 197
+    }, {
+      "date": 1586373540,
+      "date_string": "2020-04-08",
+      "confirmed": 4761,
+      "cured": 528,
+      "deaths": 220
+    }, {
+      "date": 1586462400,
       "date_string": "2020-04-09",
       "confirmed": 5202,
       "cured": 647,
       "deaths": 248
-    },
-    "history": [
-      {
-        "date": 1584530100,
-        "date_string": "2020-03-18",
-        "confirmed": 260,
-        "cured": 19,
-        "deaths": 0
-      },
-      {
-        "date": 1584616500,
-        "date_string": "2020-03-19",
-        "confirmed": 277,
-        "cured": 25,
-        "deaths": 0
-      },
-      {
-        "date": 1584702900,
-        "date_string": "2020-03-20",
-        "confirmed": 308,
-        "cured": 31,
-        "deaths": 0
-      },
-      {
-        "date": 1584789300,
-        "date_string": "2020-03-21",
-        "confirmed": 367,
-        "cured": 52,
-        "deaths": 0
-      },
-      {
-        "date": 1584875700,
-        "date_string": "2020-03-22",
-        "confirmed": 433,
-        "cured": 64,
-        "deaths": 2
-      },
-      {
-        "date": 1584962100,
-        "date_string": "2020-03-23",
-        "confirmed": 576,
-        "cured": 73,
-        "deaths": 4
-      },
-      {
-        "date": 1585048500,
-        "date_string": "2020-03-24",
-        "confirmed": 762,
-        "cured": 79,
-        "deaths": 8
-      },
-      {
-        "date": 1585134900,
-        "date_string": "2020-03-25",
-        "confirmed": 906,
-        "cured": 86,
-        "deaths": 17
-      },
-      {
-        "date": 1585256040,
-        "date_string": "2020-03-26",
-        "confirmed": 1029,
-        "cured": 94,
-        "deaths": 23
-      },
-      {
-        "date": 1585333080,
-        "date_string": "2020-03-27",
-        "confirmed": 1292,
-        "cured": 115,
-        "deaths": 26
-      },
-      {
-        "date": 1585432140,
-        "date_string": "2020-03-28",
-        "confirmed": 1452,
-        "cured": 139,
-        "deaths": 37
-      },
-      {
-        "date": 1585506480,
-        "date_string": "2020-03-29",
-        "confirmed": 1760,
-        "cured": 169,
-        "deaths": 43
-      },
-      {
-        "date": 1585595280,
-        "date_string": "2020-03-30",
-        "confirmed": 1952,
-        "cured": 180,
-        "deaths": 65
-      },
-      {
-        "date": 1585681080,
-        "date_string": "2020-03-31",
-        "confirmed": 2245,
-        "cured": 220,
-        "deaths": 82
-      },
-      {
-        "date": 1585764600,
-        "date_string": "2020-04-01",
-        "confirmed": 2460,
-        "cured": 252,
-        "deaths": 92
-      },
-      {
-        "date": 1585853340,
-        "date_string": "2020-04-02",
-        "confirmed": 2738,
-        "cured": 267,
-        "deaths": 115
-      },
-      {
-        "date": 1585923720,
-        "date_string": "2020-04-03",
-        "confirmed": 3183,
-        "cured": 283,
-        "deaths": 133
-      },
-      {
-        "date": 1586016060,
-        "date_string": "2020-04-04",
-        "confirmed": 3613,
-        "cured": 329,
-        "deaths": 146
-      },
-      {
-        "date": 1586098380,
-        "date_string": "2020-04-05",
-        "confirmed": 3864,
-        "cured": 374,
-        "deaths": 151
-      },
-      {
-        "date": 1586203560,
-        "date_string": "2020-04-06",
-        "confirmed": 4057,
-        "cured": 406,
-        "deaths": 176
-      },
-      {
-        "date": 1586264940,
-        "date_string": "2020-04-07",
-        "confirmed": 4417,
-        "cured": 460,
-        "deaths": 197
-      },
-      {
-        "date": 1586373540,
-        "date_string": "2020-04-08",
-        "confirmed": 4761,
-        "cured": 528,
-        "deaths": 220
-      },
-      {
-        "date": 1586367480,
-        "date_string": "2020-04-09",
-        "confirmed": 5202,
-        "cured": 647,
-        "deaths": 248
-      }
-    ],
+    }, {
+      "date": 1586534940,
+      "date_string": "2020-04-10",
+      "confirmed": 5467,
+      "cured": 729,
+      "deaths": 270
+    }, {
+      "date": 1586624340,
+      "date_string": "2020-04-11",
+      "confirmed": 5990,
+      "cured": 758,
+      "deaths": 291
+    }, {
+      "date": 1586710980,
+      "date_string": "2020-04-12",
+      "confirmed": 6300,
+      "cured": 852,
+      "deaths": 314
+    }, {
+      "date": 1586797020,
+      "date_string": "2020-04-13",
+      "confirmed": 6633,
+      "cured": 914,
+      "deaths": 331
+    }, {
+      "date": 1586873460,
+      "date_string": "2020-04-14",
+      "confirmed": 6879,
+      "cured": 1051,
+      "deaths": 351
+    }, {
+      "date": 1586975340,
+      "date_string": "2020-04-15",
+      "confirmed": 7216,
+      "cured": 1217,
+      "deaths": 372
+    }, {
+      "date": 1587032580,
+      "date_string": "2020-04-16",
+      "confirmed": 7707,
+      "cured": 1357,
+      "deaths": 392
+    }, {
+      "date": 1587123540,
+      "date_string": "2020-04-17",
+      "confirmed": 8067,
+      "cured": 1508,
+      "deaths": 411
+    }, {
+      "date": 1587222600,
+      "date_string": "2020-04-18",
+      "confirmed": 8418,
+      "cured": 1730,
+      "deaths": 421
+    }, {
+      "date": 1587317280,
+      "date_string": "2020-04-19",
+      "confirmed": 8746,
+      "cured": 1892,
+      "deaths": 451
+    }, {
+      "date": 1587406200,
+      "date_string": "2020-04-20",
+      "confirmed": 8936,
+      "cured": 2017,
+      "deaths": 478
+    }, {
+      "date": 1587481080,
+      "date_string": "2020-04-21",
+      "confirmed": 9242,
+      "cured": 2153,
+      "deaths": 498
+    }, {
+      "date": 1587580860,
+      "date_string": "2020-04-22",
+      "confirmed": 9710,
+      "cured": 2406,
+      "deaths": 524
+    }, {
+      "date": 1587658740,
+      "date_string": "2020-04-23",
+      "confirmed": 10096,
+      "cured": 2478,
+      "deaths": 545
+    }, {
+      "date": 1587742860,
+      "date_string": "2020-04-24",
+      "confirmed": 10417,
+      "cured": 2817,
+      "deaths": 567
+    }, {
+      "date": 1587832380,
+      "date_string": "2020-04-25",
+      "confirmed": 10635,
+      "cured": 2890,
+      "deaths": 601
+    }, {
+      "date": 1587915120,
+      "date_string": "2020-04-26",
+      "confirmed": 11036,
+      "cured": 3054,
+      "deaths": 619
+    }, {
+      "date": 1588016460,
+      "date_string": "2020-04-27",
+      "confirmed": 11339,
+      "cured": 3141,
+      "deaths": 646
+    }, {
+      "date": 1588085100,
+      "date_string": "2020-04-28",
+      "confirmed": 11616,
+      "cured": 3404,
+      "deaths": 663
+    }, {
+      "date": 1588187940,
+      "date_string": "2020-04-29",
+      "confirmed": 11978,
+      "cured": 3569,
+      "deaths": 693
+    }, {
+      "date": 1588275720,
+      "date_string": "2020-04-30",
+      "confirmed": 12240,
+      "cured": 4017,
+      "deaths": 717
+    }, {
+      "date": 1590858720,
+      "date_string": "2020-05-01",
+      "confirmed": 12567,
+      "cured": 4328,
+      "deaths": 744
+    }, {
+      "date": 1588433160,
+      "date_string": "2020-05-02",
+      "confirmed": 12732,
+      "cured": 4547,
+      "deaths": 771
+    }, {
+      "date": 1588506300,
+      "date_string": "2020-05-03",
+      "confirmed": 13163,
+      "cured": 4869,
+      "deaths": 790
+    }, {
+      "date": 1588619820,
+      "date_string": "2020-05-04",
+      "confirmed": 13512,
+      "cured": 5269,
+      "deaths": 818
+    }, {
+      "date": 1588681080,
+      "date_string": "2020-05-05",
+      "confirmed": 13837,
+      "cured": 5454,
+      "deaths": 841
+    }, {
+      "date": 1588786320,
+      "date_string": "2020-05-06",
+      "confirmed": 14107,
+      "cured": 5788,
+      "deaths": 864
+    }, {
+      "date": 1588862040,
+      "date_string": "2020-05-07",
+      "confirmed": 14499,
+      "cured": 6144,
+      "deaths": 888
+    }, {
+      "date": 1588952700,
+      "date_string": "2020-05-08",
+      "confirmed": 14811,
+      "cured": 6423,
+      "deaths": 923
+    }, {
+      "date": 1589048940,
+      "date_string": "2020-05-09",
+      "confirmed": 15131,
+      "cured": 6912,
+      "deaths": 939
+    }, {
+      "date": 1589125560,
+      "date_string": "2020-05-10",
+      "confirmed": 15362,
+      "cured": 7051,
+      "deaths": 961
+    }, {
+      "date": 1589212680,
+      "date_string": "2020-05-11",
+      "confirmed": 15588,
+      "cured": 7245,
+      "deaths": 982
+    }, {
+      "date": 1589297760,
+      "date_string": "2020-05-12",
+      "confirmed": 15778,
+      "cured": 7685,
+      "deaths": 1002
+    }, {
+      "date": 1589391060,
+      "date_string": "2020-05-13",
+      "confirmed": 16002,
+      "cured": 7961,
+      "deaths": 1036
+    }, {
+      "date": 1589474820,
+      "date_string": "2020-05-14",
+      "confirmed": 16247,
+      "cured": 9053,
+      "deaths": 1053
+    }, {
+      "date": 1589555160,
+      "date_string": "2020-05-15",
+      "confirmed": 16437,
+      "cured": 9370,
+      "deaths": 1070
+    }, {
+      "date": 1589642460,
+      "date_string": "2020-05-16",
+      "confirmed": 16704,
+      "cured": 9574,
+      "deaths": 1094
+    }, {
+      "date": 1589738460,
+      "date_string": "2020-05-17",
+      "confirmed": 16871,
+      "cured": 9890,
+      "deaths": 1107
+    }, {
+      "date": 1589820780,
+      "date_string": "2020-05-18",
+      "confirmed": 17036,
+      "cured": 9930,
+      "deaths": 1120
+    }, {
+      "date": 1589902620,
+      "date_string": "2020-05-19",
+      "confirmed": 17191,
+      "cured": 10166,
+      "deaths": 1137
+    }, {
+      "date": 1589986320,
+      "date_string": "2020-05-20",
+      "confirmed": 17387,
+      "cured": 10356,
+      "deaths": 1147
+    }, {"date": 1590076320, "date_string": "2020-05-21", "confirmed": 17585, "cured": 10581, "deaths": 1156}],
     "stale": false
   },
   "counties": {
-    "data": [
-      {
-        "county": "AB",
-        "numberInfected": 90,
-        "totalPopulation": 342376,
-        "infectionPercentage": 0.0262868892679393415426314900,
-        "infectionsPerThousand": 0.2628688926793934154263149286
-      },
-      {
-        "county": "AR",
-        "numberInfected": 162,
-        "totalPopulation": 430629,
-        "infectionPercentage": 0.037619389311913503270796900,
-        "infectionsPerThousand": 0.3761938931191350327079690406
-      },
-      {
-        "county": "AG",
-        "numberInfected": 32,
-        "totalPopulation": 612431,
-        "infectionPercentage": 0.0052250784169971800904918300,
-        "infectionsPerThousand": 0.0522507841699718009049182683
-      },
-      {
-        "county": "BC",
-        "numberInfected": 56,
-        "totalPopulation": 616168,
-        "infectionPercentage": 0.0090884304280650731618649500,
-        "infectionsPerThousand": 0.0908843042806507316186494592
-      },
-      {
-        "county": "BH",
-        "numberInfected": 66,
-        "totalPopulation": 575398,
-        "infectionPercentage": 0.0114703214123093928028946900,
-        "infectionsPerThousand": 0.1147032141230939280289469202
-      },
-      {
-        "county": "BN",
-        "numberInfected": 76,
-        "totalPopulation": 286225,
-        "infectionPercentage": 0.0265525373395056336797973600,
-        "infectionsPerThousand": 0.2655253733950563367979736222
-      },
-      {
-        "county": "BT",
-        "numberInfected": 106,
-        "totalPopulation": 412626,
-        "infectionPercentage": 0.0256891228376302026532501600,
-        "infectionsPerThousand": 0.2568912283763020265325015874
-      },
-      {
-        "county": "BV",
-        "numberInfected": 175,
-        "totalPopulation": 549217,
-        "infectionPercentage": 0.031863543917977775633310700,
-        "infectionsPerThousand": 0.3186354391797777563331069504
-      },
-      {
-        "county": "BR",
-        "numberInfected": 16,
-        "totalPopulation": 321212,
-        "infectionPercentage": 0.0049811339551448887339202800,
-        "infectionsPerThousand": 0.0498113395514488873392027695
-      },
-      {
-        "county": "BZ",
-        "numberInfected": 13,
-        "totalPopulation": 451069,
-        "infectionPercentage": 0.0028820424369664064699635800,
-        "infectionsPerThousand": 0.0288204243696640646996357542
-      },
-      {
-        "county": "CS",
-        "numberInfected": 34,
-        "totalPopulation": 295579,
-        "infectionPercentage": 0.0115028469546212687640190900,
-        "infectionsPerThousand": 0.1150284695462126876401909473
-      },
-      {
-        "county": "CL",
-        "numberInfected": 34,
-        "totalPopulation": 306691,
-        "infectionPercentage": 0.0110860768656400089992859300,
-        "infectionsPerThousand": 0.1108607686564000899928592623
-      },
-      {
-        "county": "CJ",
-        "numberInfected": 148,
-        "totalPopulation": 691106,
-        "infectionPercentage": 0.0214149493710082100285629100,
-        "infectionsPerThousand": 0.214149493710082100285629122
-      },
-      {
-        "county": "CT",
-        "numberInfected": 124,
-        "totalPopulation": 684082,
-        "infectionPercentage": 0.0181264819129870395654322100,
-        "infectionsPerThousand": 0.1812648191298703956543221427
-      },
-      {
-        "county": "CV",
-        "numberInfected": 62,
-        "totalPopulation": 210177,
-        "infectionPercentage": 0.0294989461263601631006247100,
-        "infectionsPerThousand": 0.2949894612636016310062471155
-      },
-      {
-        "county": "DB",
-        "numberInfected": 28,
-        "totalPopulation": 518745,
-        "infectionPercentage": 0.0053976423869145726705799600,
-        "infectionsPerThousand": 0.053976423869145726705799574
-      },
-      {
-        "county": "DJ",
-        "numberInfected": 39,
-        "totalPopulation": 660544,
-        "infectionPercentage": 0.0059042243968607693052998700,
-        "infectionsPerThousand": 0.0590422439686076930529987404
-      },
-      {
-        "county": "GL",
-        "numberInfected": 175,
-        "totalPopulation": 536167,
-        "infectionPercentage": 0.0326390844643553221291127600,
-        "infectionsPerThousand": 0.3263908446435532212911275778
-      },
-      {
-        "county": "GR",
-        "numberInfected": 46,
-        "totalPopulation": 281422,
-        "infectionPercentage": 0.0163455593379337791643865800,
-        "infectionsPerThousand": 0.1634555933793377916438657959
-      },
-      {
-        "county": "GJ",
-        "numberInfected": 9,
-        "totalPopulation": 341594,
-        "infectionPercentage": 0.0026347066985954085844599100,
-        "infectionsPerThousand": 0.026347066985954085844599144
-      },
-      {
-        "county": "HR",
-        "numberInfected": 4,
-        "totalPopulation": 310867,
-        "infectionPercentage": 0.0012867239044350156176113900,
-        "infectionsPerThousand": 0.0128672390443501561761139008
-      },
-      {
-        "county": "HD",
-        "numberInfected": 212,
-        "totalPopulation": 418565,
-        "infectionPercentage": 0.0506492420532055953077777600,
-        "infectionsPerThousand": 0.506492420532055953077777645
-      },
-      {
-        "county": "IL",
-        "numberInfected": 81,
-        "totalPopulation": 274148,
-        "infectionPercentage": 0.0295460845966412302843719500,
-        "infectionsPerThousand": 0.2954608459664123028437194508
-      },
-      {
-        "county": "IS",
-        "numberInfected": 131,
-        "totalPopulation": 772348,
-        "infectionPercentage": 0.0169612661649929824379683800,
-        "infectionsPerThousand": 0.1696126616499298243796837695
-      },
-      {
-        "county": "IF",
-        "numberInfected": 107,
-        "totalPopulation": 388738,
-        "infectionPercentage": 0.0275249654008612484501129300,
-        "infectionsPerThousand": 0.2752496540086124845011292953
-      },
-      {
-        "county": "MM",
-        "numberInfected": 43,
-        "totalPopulation": 478659,
-        "infectionPercentage": 0.0089834307931115888346401100,
-        "infectionsPerThousand": 0.0898343079311158883464010914
-      },
-      {
-        "county": "MH",
-        "numberInfected": 15,
-        "totalPopulation": 265390,
-        "infectionPercentage": 0.0056520592335807679264478700,
-        "infectionsPerThousand": 0.0565205923358076792644786917
-      },
-      {
-        "county": "MS",
-        "numberInfected": 146,
-        "totalPopulation": 550846,
-        "infectionPercentage": 0.0265046855200909147021127500,
-        "infectionsPerThousand": 0.2650468552009091470211275021
-      },
-      {
-        "county": "NT",
-        "numberInfected": 202,
-        "totalPopulation": 470766,
-        "infectionPercentage": 0.0429087912041226426717307500,
-        "infectionsPerThousand": 0.4290879120412264267173075371
-      },
-      {
-        "county": "OT",
-        "numberInfected": 12,
-        "totalPopulation": 436400,
-        "infectionPercentage": 0.0027497708524289642529789200,
-        "infectionsPerThousand": 0.0274977085242896425297891842
-      },
-      {
-        "county": "PH",
-        "numberInfected": 36,
-        "totalPopulation": 762886,
-        "infectionPercentage": 0.0047189226175339434725502900,
-        "infectionsPerThousand": 0.047189226175339434725502893
-      },
-      {
-        "county": "SM",
-        "numberInfected": 28,
-        "totalPopulation": 344360,
-        "infectionPercentage": 0.0081310256708096178417934700,
-        "infectionsPerThousand": 0.0813102567080961784179347195
-      },
-      {
-        "county": "SJ",
-        "numberInfected": 12,
-        "totalPopulation": 224384,
-        "infectionPercentage": 0.0053479749001711351968054800,
-        "infectionsPerThousand": 0.0534797490017113519680547633
-      },
-      {
-        "county": "SB",
-        "numberInfected": 90,
-        "totalPopulation": 397322,
-        "infectionPercentage": 0.0226516528156004449791353100,
-        "infectionsPerThousand": 0.2265165281560044497913531091
-      },
-      {
-        "county": "SV",
-        "numberInfected": 1487,
-        "totalPopulation": 634810,
-        "infectionPercentage": 0.2342433168979694711803531800,
-        "infectionsPerThousand": 2.3424331689796947118035317654
-      },
-      {
-        "county": "TR",
-        "numberInfected": 41,
-        "totalPopulation": 380123,
-        "infectionPercentage": 0.0107859824320022729484929900,
-        "infectionsPerThousand": 0.107859824320022729484929878
-      },
-      {
-        "county": "TM",
-        "numberInfected": 252,
-        "totalPopulation": 683540,
-        "infectionPercentage": 0.036866898791584984053603300,
-        "infectionsPerThousand": 0.3686689879158498405360330047
-      },
-      {
-        "county": "TL",
-        "numberInfected": 11,
-        "totalPopulation": 213083,
-        "infectionPercentage": 0.0051623076453776228042593700,
-        "infectionsPerThousand": 0.0516230764537762280425937311
-      },
-      {
-        "county": "VS",
-        "numberInfected": 36,
-        "totalPopulation": 395499,
-        "infectionPercentage": 0.0091024250377371371356185500,
-        "infectionsPerThousand": 0.0910242503773713713561854771
-      },
-      {
-        "county": "VL",
-        "numberInfected": 11,
-        "totalPopulation": 371714,
-        "infectionPercentage": 0.002959264380679769930645600,
-        "infectionsPerThousand": 0.0295926438067976993064560388
-      },
-      {
-        "county": "VN",
-        "numberInfected": 95,
-        "totalPopulation": 340310,
-        "infectionPercentage": 0.0279157238987981546237254300,
-        "infectionsPerThousand": 0.2791572389879815462372542682
-      },
-      {
-        "county": "B",
-        "numberInfected": 659,
-        "totalPopulation": 1883425,
-        "infectionPercentage": 0.03498944741627619894606900,
-        "infectionsPerThousand": 0.3498944741627619894606899664
-      }
-    ],
-    "lastUpdatedString": "2020-04-09",
-    "lastUpdated": -1,
-    "stale": false
+    "data": [{
+      "county": "AB",
+      "numberInfected": 276,
+      "totalPopulation": 342376,
+      "infectionPercentage": 0.0806131270883473140640699100,
+      "infectionsPerThousand": 0.8061312708834731406406991144
+    }, {
+      "county": "AR",
+      "numberInfected": 697,
+      "totalPopulation": 430629,
+      "infectionPercentage": 0.161856261422245134442873100,
+      "infectionsPerThousand": 1.6185626142224513444287309958
+    }, {
+      "county": "AG",
+      "numberInfected": 226,
+      "totalPopulation": 612431,
+      "infectionPercentage": 0.0369021163200425843890985300,
+      "infectionsPerThousand": 0.3690211632004258438909852702
+    }, {
+      "county": "BC",
+      "numberInfected": 465,
+      "totalPopulation": 616168,
+      "infectionPercentage": 0.0754664312330403396476285700,
+      "infectionsPerThousand": 0.7546643123304033964762856883
+    }, {
+      "county": "BH",
+      "numberInfected": 527,
+      "totalPopulation": 575398,
+      "infectionPercentage": 0.0915887785498037879867500400,
+      "infectionsPerThousand": 0.9158877854980378798675004084
+    }, {
+      "county": "BN",
+      "numberInfected": 312,
+      "totalPopulation": 286225,
+      "infectionPercentage": 0.109005153288496811948641800,
+      "infectionsPerThousand": 1.0900515328849681194864180278
+    }, {
+      "county": "BT",
+      "numberInfected": 694,
+      "totalPopulation": 412626,
+      "infectionPercentage": 0.1681910495218430249184491500,
+      "infectionsPerThousand": 1.681910495218430249184491525
+    }, {
+      "county": "BV",
+      "numberInfected": 662,
+      "totalPopulation": 549217,
+      "infectionPercentage": 0.1205352347068644998242953100,
+      "infectionsPerThousand": 1.2053523470686449982429531497
+    }, {
+      "county": "BR",
+      "numberInfected": 19,
+      "totalPopulation": 321212,
+      "infectionPercentage": 0.0059150965717345553715303300,
+      "infectionsPerThousand": 0.0591509657173455537153032888
+    }, {
+      "county": "BZ",
+      "numberInfected": 151,
+      "totalPopulation": 451069,
+      "infectionPercentage": 0.0334760313832251828434230700,
+      "infectionsPerThousand": 0.3347603138322518284342306831
+    }, {
+      "county": "CS",
+      "numberInfected": 111,
+      "totalPopulation": 295579,
+      "infectionPercentage": 0.0375534121165576715531211600,
+      "infectionsPerThousand": 0.3755341211655767155312116219
+    }, {
+      "county": "CL",
+      "numberInfected": 77,
+      "totalPopulation": 306691,
+      "infectionPercentage": 0.0251067034898317850866181300,
+      "infectionsPerThousand": 0.2510670348983178508661812704
+    }, {
+      "county": "CJ",
+      "numberInfected": 538,
+      "totalPopulation": 691106,
+      "infectionPercentage": 0.0778462348756920067254516700,
+      "infectionsPerThousand": 0.7784623487569200672545166733
+    }, {
+      "county": "CT",
+      "numberInfected": 265,
+      "totalPopulation": 684082,
+      "infectionPercentage": 0.0387380460237223022970930400,
+      "infectionsPerThousand": 0.3873804602372230229709303855
+    }, {
+      "county": "CV",
+      "numberInfected": 229,
+      "totalPopulation": 210177,
+      "infectionPercentage": 0.1089557848860722153232751400,
+      "infectionsPerThousand": 1.0895578488607221532327514428
+    }, {
+      "county": "DB",
+      "numberInfected": 244,
+      "totalPopulation": 518745,
+      "infectionPercentage": 0.047036597943112704700768200,
+      "infectionsPerThousand": 0.4703659794311270470076820018
+    }, {
+      "county": "DJ",
+      "numberInfected": 178,
+      "totalPopulation": 660544,
+      "infectionPercentage": 0.0269474857087491522139327600,
+      "infectionsPerThousand": 0.2694748570874915221393275845
+    }, {
+      "county": "GL",
+      "numberInfected": 557,
+      "totalPopulation": 536167,
+      "infectionPercentage": 0.1038855431236909395766617500,
+      "infectionsPerThousand": 1.0388554312369093957666174904
+    }, {
+      "county": "GR",
+      "numberInfected": 210,
+      "totalPopulation": 281422,
+      "infectionPercentage": 0.0746210317601324700982865600,
+      "infectionsPerThousand": 0.7462103176013247009828655898
+    }, {
+      "county": "GJ",
+      "numberInfected": 100,
+      "totalPopulation": 341594,
+      "infectionPercentage": 0.0292745188732823176051101600,
+      "infectionsPerThousand": 0.2927451887328231760511016001
+    }, {
+      "county": "HR",
+      "numberInfected": 100,
+      "totalPopulation": 310867,
+      "infectionPercentage": 0.0321680976108753904402847500,
+      "infectionsPerThousand": 0.32168097610875390440284752
+    }, {
+      "county": "HD",
+      "numberInfected": 619,
+      "totalPopulation": 418565,
+      "infectionPercentage": 0.1478862303345955825260114900,
+      "infectionsPerThousand": 1.4788623033459558252601149164
+    }, {
+      "county": "IL",
+      "numberInfected": 342,
+      "totalPopulation": 274148,
+      "infectionPercentage": 0.1247501349635963056451259900,
+      "infectionsPerThousand": 1.2475013496359630564512599034
+    }, {
+      "county": "IS",
+      "numberInfected": 428,
+      "totalPopulation": 772348,
+      "infectionPercentage": 0.0554154344932595151408432500,
+      "infectionsPerThousand": 0.5541543449325951514084324683
+    }, {
+      "county": "IF",
+      "numberInfected": 435,
+      "totalPopulation": 388738,
+      "infectionPercentage": 0.1119005602745293745401787300,
+      "infectionsPerThousand": 1.1190056027452937454017873221
+    }, {
+      "county": "MM",
+      "numberInfected": 84,
+      "totalPopulation": 478659,
+      "infectionPercentage": 0.0175490275958458944676690500,
+      "infectionsPerThousand": 0.1754902759584589446766905041
+    }, {
+      "county": "MH",
+      "numberInfected": 101,
+      "totalPopulation": 265390,
+      "infectionPercentage": 0.0380571988394438373714156500,
+      "infectionsPerThousand": 0.3805719883944383737141565244
+    }, {
+      "county": "MS",
+      "numberInfected": 660,
+      "totalPopulation": 550846,
+      "infectionPercentage": 0.1198157016661644089273590100,
+      "infectionsPerThousand": 1.1981570166616440892735900778
+    }, {
+      "county": "NT",
+      "numberInfected": 845,
+      "totalPopulation": 470766,
+      "infectionPercentage": 0.179494695878631846819863800,
+      "infectionsPerThousand": 1.7949469587863184681986379645
+    }, {
+      "county": "OT",
+      "numberInfected": 65,
+      "totalPopulation": 436400,
+      "infectionPercentage": 0.0148945921173235563703024700,
+      "infectionsPerThousand": 0.1489459211732355637030247479
+    }, {
+      "county": "PH",
+      "numberInfected": 89,
+      "totalPopulation": 762886,
+      "infectionPercentage": 0.0116662253600144713626937700,
+      "infectionsPerThousand": 0.1166622536001447136269377076
+    }, {
+      "county": "SM",
+      "numberInfected": 60,
+      "totalPopulation": 344360,
+      "infectionPercentage": 0.0174236264374491810895574400,
+      "infectionsPerThousand": 0.1742362643744918108955743989
+    }, {
+      "county": "SJ",
+      "numberInfected": 78,
+      "totalPopulation": 224384,
+      "infectionPercentage": 0.034761836851112378779235600,
+      "infectionsPerThousand": 0.3476183685111237877923559612
+    }, {
+      "county": "SB",
+      "numberInfected": 470,
+      "totalPopulation": 397322,
+      "infectionPercentage": 0.1182919647036912126688177300,
+      "infectionsPerThousand": 1.1829196470369121266881773473
+    }, {
+      "county": "SV",
+      "numberInfected": 3472,
+      "totalPopulation": 634810,
+      "infectionPercentage": 0.5469353034766308029174083600,
+      "infectionsPerThousand": 5.4693530347663080291740835841
+    }, {
+      "county": "TR",
+      "numberInfected": 119,
+      "totalPopulation": 380123,
+      "infectionPercentage": 0.0313056563270309873383089200,
+      "infectionsPerThousand": 0.313056563270309873383089158
+    }, {
+      "county": "TM",
+      "numberInfected": 494,
+      "totalPopulation": 683540,
+      "infectionPercentage": 0.0722708254089007227082540900,
+      "infectionsPerThousand": 0.7227082540890072270825408901
+    }, {
+      "county": "TL",
+      "numberInfected": 135,
+      "totalPopulation": 213083,
+      "infectionPercentage": 0.0633555938296344616886377600,
+      "infectionsPerThousand": 0.6335559382963446168863776087
+    }, {
+      "county": "VS",
+      "numberInfected": 149,
+      "totalPopulation": 395499,
+      "infectionPercentage": 0.0376739258506342620335323200,
+      "infectionsPerThousand": 0.3767392585063426203353232246
+    }, {
+      "county": "VL",
+      "numberInfected": 28,
+      "totalPopulation": 371714,
+      "infectionPercentage": 0.0075326729690030507325524500,
+      "infectionsPerThousand": 0.0753267296900305073255244624
+    }, {
+      "county": "VN",
+      "numberInfected": 552,
+      "totalPopulation": 340310,
+      "infectionPercentage": 0.1622050483382798037083835300,
+      "infectionsPerThousand": 1.6220504833827980370838353266
+    }, {
+      "county": "B",
+      "numberInfected": 1687,
+      "totalPopulation": 1883425,
+      "infectionPercentage": 0.0895708615952320904734725300,
+      "infectionsPerThousand": 0.895708615952320904734725301
+    }, {
+      "county": "-",
+      "numberInfected": 35,
+      "totalPopulation": 0,
+      "infectionPercentage": 0.0,
+      "infectionsPerThousand": 0.0
+    }], "lastUpdatedString": "2020-05-21", "lastUpdated": -1, "stale": false
   },
-  "averageAge": {
-    "value": "46",
-    "lastUpdated": -1,
-    "lastUpdatedString": "2020-03-30",
-    "stale": true
-  }
+  "averageAge": {"value": "46", "lastUpdated": -1, "lastUpdatedString": "2020-03-30", "stale": true}
 }
