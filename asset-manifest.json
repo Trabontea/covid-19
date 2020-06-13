@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/covid-19-romania/static/css/main.167e703d.chunk.css",
-    "main.js": "/covid-19-romania/static/js/main.112be660.chunk.js",
-    "main.js.map": "/covid-19-romania/static/js/main.112be660.chunk.js.map",
-    "runtime-main.js": "/covid-19-romania/static/js/runtime-main.bf99a242.js",
-    "runtime-main.js.map": "/covid-19-romania/static/js/runtime-main.bf99a242.js.map",
-    "static/js/2.65ce1bf0.chunk.js": "/covid-19-romania/static/js/2.65ce1bf0.chunk.js",
-    "static/js/2.65ce1bf0.chunk.js.map": "/covid-19-romania/static/js/2.65ce1bf0.chunk.js.map",
-    "index.html": "/covid-19-romania/index.html",
-    "precache-manifest.01ad64673a8cd2a2e4889981794e276e.js": "/covid-19-romania/precache-manifest.01ad64673a8cd2a2e4889981794e276e.js",
-    "service-worker.js": "/covid-19-romania/service-worker.js",
-    "static/css/main.167e703d.chunk.css.map": "/covid-19-romania/static/css/main.167e703d.chunk.css.map",
-    "static/js/2.65ce1bf0.chunk.js.LICENSE.txt": "/covid-19-romania/static/js/2.65ce1bf0.chunk.js.LICENSE.txt",
-    "static/media/hands-and-gestures.4e79c04f.svg": "/covid-19-romania/static/media/hands-and-gestures.4e79c04f.svg",
-    "static/media/sort.5799cd24.svg": "/covid-19-romania/static/media/sort.5799cd24.svg"
+    "main.css": "/covid-19/static/css/main.167e703d.chunk.css",
+    "main.js": "/covid-19/static/js/main.98d5499d.chunk.js",
+    "main.js.map": "/covid-19/static/js/main.98d5499d.chunk.js.map",
+    "runtime-main.js": "/covid-19/static/js/runtime-main.db8c32d2.js",
+    "runtime-main.js.map": "/covid-19/static/js/runtime-main.db8c32d2.js.map",
+    "static/js/2.65ce1bf0.chunk.js": "/covid-19/static/js/2.65ce1bf0.chunk.js",
+    "static/js/2.65ce1bf0.chunk.js.map": "/covid-19/static/js/2.65ce1bf0.chunk.js.map",
+    "index.html": "/covid-19/index.html",
+    "precache-manifest.68b7f002c2235f58e039ba043ad759d5.js": "/covid-19/precache-manifest.68b7f002c2235f58e039ba043ad759d5.js",
+    "service-worker.js": "/covid-19/service-worker.js",
+    "static/css/main.167e703d.chunk.css.map": "/covid-19/static/css/main.167e703d.chunk.css.map",
+    "static/js/2.65ce1bf0.chunk.js.LICENSE.txt": "/covid-19/static/js/2.65ce1bf0.chunk.js.LICENSE.txt",
+    "static/media/hands-and-gestures.4e79c04f.svg": "/covid-19/static/media/hands-and-gestures.4e79c04f.svg",
+    "static/media/sort.5799cd24.svg": "/covid-19/static/media/sort.5799cd24.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf99a242.js",
+    "static/js/runtime-main.db8c32d2.js",
     "static/js/2.65ce1bf0.chunk.js",
     "static/css/main.167e703d.chunk.css",
-    "static/js/main.112be660.chunk.js"
+    "static/js/main.98d5499d.chunk.js"
   ]
 }
