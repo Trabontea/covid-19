@@ -1,4 +1,4 @@
-export const data = {
+export const dataJson = {
   "ageHistogram": {
     "datePublished": 1590076320,
     "datePublishedString": "2020-05-21",

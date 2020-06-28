@@ -10,26 +10,31 @@ import Loader from "../loader/loader";
 import GraphBySituation from "../graph-by-situation/graph-by-situation";
 import Footer from "../footer/footer";
 import Cumulative from "../cumulative/cumulative";
+import {dataJson} from "../_data/data";
 
 const Directory = () => {
   const [data, setData] = useState({});
   const [hasError, setErrors] = useState(false);
   
   useEffect(() => {
-    const abortController = new AbortController();
-    const signal = abortController.signal;
-    const API_URL = "https://api1.datelazi.ro/api/v2/data/ui-data";
-    
-    fetch(API_URL, { signal: signal })
-      .then(results => results.json())
-      .then(data => {
-        setData(data);
-      })
-      .catch(error => setErrors(error));
-    return function cleanup() {
-      abortController.abort();
-    };
-  }, []);
+    setData(dataJson)
+  },[])
+  
+  // useEffect(() => {
+  //   const abortController = new AbortController();
+  //   const signal = abortController.signal;
+  //   const API_URL = "https://api1.datelazi.ro/api/v2/data/ui-data";
+  //
+  //   fetch(API_URL, { signal: signal })
+  //     .then(results => results.json())
+  //     .then(data => {
+  //       setData(data);
+  //     })
+  //     .catch(error => setErrors(error));
+  //   return function cleanup() {
+  //     abortController.abort();
+  //   };
+  // }, []);
   
   const dataArray = Object.values(data);
   //console.log(dataArray);
