@@ -4,7 +4,7 @@ const Countdown = () => {
   
   const calculateTimeLeft = () => {
     //an, luna, zi
-    const difference = +new Date("2020-05-15") - +new Date();
+    const difference = +new Date("2021-04-15") - +new Date();
     let timeLeft = {};
     
     if (difference > 0) {

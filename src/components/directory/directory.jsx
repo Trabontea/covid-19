@@ -14,6 +14,7 @@ import {dataJson} from "../_data/data";
 
 const Directory = () => {
   const [data, setData] = useState({});
+  // eslint-disable-next-line
   const [hasError, setErrors] = useState(false);
   
   useEffect(() => {

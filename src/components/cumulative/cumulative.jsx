@@ -8,9 +8,7 @@ import {columns} from "./columns";
 const Cumulative = ({history, updateDate}) => {
   const [show, setShow] = useState({show: false});
   const [sortColumn, setSortColumn] = useState({path: 'date_string', order: 'desc'});
-  
-  
-  
+
   const handleSort = path => {
     setSortColumn({path: path, order: 'asc'});
     if(sortColumn.path === path && sortColumn.order === "asc") {
